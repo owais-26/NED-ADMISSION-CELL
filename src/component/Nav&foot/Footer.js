@@ -232,14 +232,17 @@ const Footer = () => {
                 <i className="fa-brands fa-github"></i>
               </a>{" "}
               <br />
-              <a
-              target='_blank'
+              <Link
+                onClick={() => {
+                  window.scroll(0, 0);
+                }}
                 rel="noopener noreferrer"
                 className="text-white"
-                href="www.nedadmissioncell.com"
+                to="/"
               >
-                www.nedadmissioncell.com
-              </a>
+                www.nedadmissioncell.com &nbsp;
+              </Link>
+                | All Rights Reserved
             </p>
           </div>
         </footer>
