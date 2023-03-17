@@ -24,7 +24,8 @@ useEffect(() => {
       <div className="text-center">
         <h1 data-aos="fade-down" className="mt-3 h1seo">
           {" "}
-          <i className="fa-sharp fa-solid fa-list-ol me-1"></i> Year Wise Merit List
+          <i className="fa-sharp fa-solid fa-list-ol me-1"></i> Year Wise Merit
+          List
         </h1>
         <div
           data-aos="fade-up"
@@ -51,6 +52,25 @@ useEffect(() => {
           decisions about their academic futures. Slide to see for year 2021 and
           2020.
         </p>
+      </div>
+      <div className="d-flex mb-4 justify-content-center align-items-center">
+        <a download href="nedmerit22.jpeg">
+          {" "}
+          <button type="button" className="btn mx-2 btn-outline-primary mb-2 ">
+            <i className="fa-solid me-1 fa-file-arrow-down"></i>Merit List 2022
+          </button>
+        </a>
+        <a download href="ned2021.jpeg">
+          {" "}
+          <button type="button" className="btn btn-outline-primary  mx-2 mb-2 ">
+            <i className="fa-solid me-1 fa-file-arrow-down"></i> Merit List 2021
+          </button>
+        </a>
+        <a download href="ned2020.jpeg">
+          <button type="button" className="btn btn-outline-primary  mx-2 mb-2  ">
+            <i className="fa-solid me-1 fa-file-arrow-down"></i> Merit List 2020
+          </button>
+        </a>
       </div>
 
       <Carousel>
