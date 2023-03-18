@@ -53,21 +53,30 @@ useEffect(() => {
           2020.
         </p>
       </div>
-      <div className="d-flex mb-4 justify-content-center align-items-center">
+      <div className="d-flex  mb-4 justify-content-center align-items-center">
         <a download href="nedmerit22.jpeg">
           {" "}
-          <button type="button" className="btn mx-2 btn-outline-primary mb-2 ">
+          <button
+            type="button"
+            className="btn cardPast mx-2 btn-outline-primary mb-2 "
+          >
             <i className="fa-solid me-1 fa-file-arrow-down"></i>Merit List 2022
           </button>
         </a>
         <a download href="ned2021.jpeg">
           {" "}
-          <button type="button" className="btn btn-outline-primary  mx-2 mb-2 ">
+          <button
+            type="button"
+            className="btn cardPast btn-outline-primary  mx-2 mb-2 "
+          >
             <i className="fa-solid me-1 fa-file-arrow-down"></i> Merit List 2021
           </button>
         </a>
         <a download href="ned2020.jpeg">
-          <button type="button" className="btn btn-outline-primary  mx-2 mb-2  ">
+          <button
+            type="button"
+            className="btn cardPast btn-outline-primary  mx-2 mb-2  "
+          >
             <i className="fa-solid me-1 fa-file-arrow-down"></i> Merit List 2020
           </button>
         </a>
@@ -76,7 +85,7 @@ useEffect(() => {
       <Carousel>
         <Carousel.Item>
           <img
-            loading="lazy"
+           
             className="d-block w-100"
             src="merit list-1.jpg"
             alt="First slide"
@@ -84,7 +93,7 @@ useEffect(() => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            loading="lazy"
+            
             className="d-block w-100"
             src="ned2021.jpeg"
             alt="Second slide"
@@ -92,7 +101,7 @@ useEffect(() => {
         </Carousel.Item>
         <Carousel.Item>
           <img
-            loading="lazy"
+            
             className="d-block w-100"
             src="ned2020.jpeg"
             alt="Third slide"
