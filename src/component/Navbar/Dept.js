@@ -67,7 +67,7 @@ export default function Dept() {
           {openDept === "arch" && <Arch />}
           {openDept === "eco" && <Eco />}
         </article>
-        <aside id="sidebar">
+        <aside side id="sidebar">
           <div
             style={{
               color: "white ",
@@ -79,6 +79,7 @@ export default function Dept() {
             <ul data-aos="fade-down" className="list-unstyled components  mb-5">
               <li>
                 <a
+                  role="button"
                   rel="noopener noreferrer"
                   href="#pageSubmenu1"
                   data-toggle="collapse"
@@ -101,6 +102,7 @@ export default function Dept() {
                   >
                     <li>
                       <a
+                        role="button"
                         rel="noopener noreferrer"
                         href="#"
                         onClick={(event) => {
@@ -114,6 +116,7 @@ export default function Dept() {
                     </li>
                     <li>
                       <a
+                        role="button"
                         rel="noopener noreferrer"
                         href="#"
                         onClick={(event) => {
@@ -127,6 +130,7 @@ export default function Dept() {
                     </li>
                     <li>
                       <a
+                        role="button"
                         rel="noopener noreferrer"
                         href="#"
                         onClick={() => {
@@ -143,6 +147,7 @@ export default function Dept() {
               </li>
               <li>
                 <a
+                  role="button"
                   rel="noopener noreferrer"
                   href="#pageSubmenu2"
                   data-toggle="collapse"
@@ -166,6 +171,7 @@ export default function Dept() {
                 >
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -180,6 +186,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -194,6 +201,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -208,6 +216,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -224,6 +233,7 @@ export default function Dept() {
               </li>
               <li>
                 <a
+                  role="button"
                   rel="noopener noreferrer"
                   href="#pageSubmenu3"
                   data-toggle="collapse"
@@ -247,6 +257,7 @@ export default function Dept() {
                 >
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -261,6 +272,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -275,6 +287,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -289,6 +302,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -303,6 +317,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -319,6 +334,7 @@ export default function Dept() {
               </li>
               <li>
                 <a
+                  role="button"
                   rel="noopener noreferrer"
                   href="#pageSubmenu4"
                   data-toggle="collapse"
@@ -341,6 +357,7 @@ export default function Dept() {
                 >
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -355,6 +372,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -369,6 +387,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -383,6 +402,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -399,6 +419,7 @@ export default function Dept() {
               </li>
               <li>
                 <a
+                  role="button"
                   rel="noopener noreferrer"
                   href="#pageSubmenu4"
                   data-toggle="collapse"
@@ -421,6 +442,7 @@ export default function Dept() {
                 >
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
@@ -435,6 +457,7 @@ export default function Dept() {
                   </li>
                   <li>
                     <a
+                      role="button"
                       rel="noopener noreferrer"
                       href="#"
                       onClick={(event) => {
