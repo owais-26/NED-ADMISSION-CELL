@@ -21,25 +21,39 @@ function App() {
   return (
     <>
       <BrowserRouter>
-      <Navbar></Navbar>
+        <Navbar></Navbar>
         <Routes>
-          <Route path="/" element={<Home/>}>{" "}</Route>
-          <Route path="/faqs" element={<Faqs/>}>{" "}</Route>
-          <Route path="/dept" element={<Dept/>}>{" "}</Route>
-          <Route path="/guidelines" element={<Guidelines/>}>{" "}</Route>
-          <Route path="/merit" element={<Merit/>}>{" "}</Route>
-          <Route path="/pastpaper" element={<PastPaper/>}>{" "}</Route>
-          <Route path="/news" element={<News/>}>{" "}</Route>
-          <Route path="/tests" element={<Test/>}>{" "}</Route>
-          <Route path="/onlinecourses" element={<Courses/>}>{" "}</Route>
-          
-          
-
+          <Route  path="/" element={<Home />}>
+            {" "}
+          </Route>
+          <Route  path="/faqs" element={<Faqs />}>
+            {" "}
+          </Route>
+          <Route  path="/dept" element={<Dept />}>
+            {" "}
+          </Route>
+          <Route  path="/guidelines"  element={<Guidelines />}>
+            {" "}
+          </Route>
+          <Route  path="/merit"  element={<Merit />}>
+            {" "}
+          </Route>
+          <Route  path="/pastpaper"  element={<PastPaper />}>
+            {" "}
+          </Route>
+          <Route  path="/news"  element={<News />}>
+            {" "}
+          </Route>
+          <Route  path="/tests"  element={<Test />}>
+            {" "}
+          </Route>
+          <Route  path="/onlinecourses" element={<Courses />}>
+            {" "}
+          </Route>
         </Routes>
-        <WhatsApp/>
-        <Footer/>
+        <WhatsApp />
+        <Footer />
       </BrowserRouter>
-      
     </>
   );
 }

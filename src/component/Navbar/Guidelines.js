@@ -22,7 +22,8 @@ const Guidelines = () => {
         </HelmetProvider>
         <div>
           <h1 data-aos="fade-down" className="text-center h1seo mt-3">
-            <i className="fa-solid fa-circle-info me-1"></i> Guidelines & Criteria
+            <i className="fa-solid fa-circle-info me-1"></i> Guidelines &
+            Criteria
           </h1>
           <div
             data-aos="fade-up"
@@ -193,9 +194,9 @@ const Guidelines = () => {
                   rel="noopener noreferrer"
                   target={"_blank"}
                   className="text-dark"
-                  href="https://www.youtube.com/c/SirNasimZulfiqar"
+                  href="https://youtu.be/yE9ezgoA0L4"
                 >
-                  Sir Nasim Zulfiqar
+                  HOW TO ACE COMPUTERIZED APTIUDE EXAM?
                 </a>
               </li>
               <li>
@@ -203,11 +204,33 @@ const Guidelines = () => {
                   rel="noopener noreferrer"
                   target={"_blank"}
                   className="text-dark"
-                  href="https://youtu.be/yE9ezgoA0L4"
+                  href="https://youtu.be/BZqYojWz3QU"
                 >
-                  HOW TO ACE COMPUTERIZED APTIUDE EXAM
+                  HOW TO PREPARE FOR NED APTITUDE EXAM?
                 </a>
               </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  target={"_blank"}
+                  className="text-dark"
+                  href="https://youtu.be/5HkRSmeific"
+                >
+                  HOW TO MANAGE TIME WHILE PREPAREING FOR A-LEVELS/INTER AND
+                  APTITUDE?
+                </a>
+              </li>
+              <li>
+                <a
+                  rel="noopener noreferrer"
+                  target={"_blank"}
+                  className="text-dark"
+                  href="https://youtu.be/UOTvIC9Hh9A"
+                >
+                  NED SEATS DISTRIBUTION
+                </a>
+              </li>
+             
             </ul>
           </b>
         </section>

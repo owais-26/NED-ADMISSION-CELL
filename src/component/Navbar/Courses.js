@@ -82,7 +82,25 @@ const Courses = () => {
               <br /> Bank: Meezan Bank Branch: Shamsi Society - Malir <br />
             </b>{" "}
             Don't miss out on this incredible opportunity to excel in your ECAT
-            and MDCAT exams! Register now and secure your place in our Batch.
+            and MDCAT exams! Register now and secure your place in our Batch.{" "}
+            <h6>
+              <br />
+              Check Our Facebook Reviews at:{" "}
+              <a
+                className="text-primary"
+                href="https://www.facebook.com/mathsflix/reviews"
+              >
+                Facebook Reviews
+              </a>
+              <br />
+              Check Our YouTube Reviews at:{" "}
+              <a
+                className="text-primary"
+                href="https://www.youtube.com/@MathsflixByHashimZia/community"
+              >
+                YouTube Reviews
+              </a>
+            </h6>
           </section>
         </div>
         <img

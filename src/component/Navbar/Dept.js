@@ -67,7 +67,7 @@ export default function Dept() {
           {openDept === "arch" && <Arch />}
           {openDept === "eco" && <Eco />}
         </article>
-        <aside side id="sidebar">
+        <aside  id="sidebar">
           <div
             style={{
               color: "white ",

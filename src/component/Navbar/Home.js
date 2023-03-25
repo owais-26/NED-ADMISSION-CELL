@@ -68,7 +68,7 @@ function Home() {
           ></button>
         </div>
         <div className="carousel-inner">
-          <div className="carousel-item active " data-bs-interval="10000">
+          <div className="carousel-item active " data-bs-interval="5000">
             <img
               src="mainpic.png"
               className="d-block w-100 carousel-media"

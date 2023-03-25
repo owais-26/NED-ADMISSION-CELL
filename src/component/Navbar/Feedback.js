@@ -11,35 +11,35 @@ const Feedback = () => {
         <div className="carousel-inner hashim1 rounded shade ">
           <div className="carousel-item active text-center shade rounded">
             <img
-              src="feedback1.png"
+              src="feedback1.jpeg"
               className="d-block mx-auto w-75 shade rounded"
               alt="Feedbacks 1"
             />
           </div>
           <div className="carousel-item text-center">
             <img
-              src="feedback2.png"
+              src="feedback2.jpeg"
               className="d-block mx-auto w-75 shade rounded"
               alt="Feedbacks 2"
             />
           </div>
           <div className="carousel-item text-center">
             <img
-              src="feedback3.png"
+              src="feedback3.jpeg"
               className="d-block mx-auto w-75 shade rounded"
               alt="Feedbacks 3"
             />
           </div>
           <div className="carousel-item text-center shade rounded">
             <img
-              src="feedback4.png"
+              src="feedback4.jpeg"
               className="d-block mx-auto w-75"
               alt="Feedbacks 4"
             />
           </div>
           <div className="carousel-item text-center">
             <img
-              src="feedback5.png"
+              src="feedback5.jpeg"
               className="d-block mx-auto w-75 shade rounded"
               alt="Feedbacks 5"
             />

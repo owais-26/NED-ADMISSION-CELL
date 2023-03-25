@@ -37,10 +37,9 @@ function Navbar() {
         <div className="container-fluid ">
           <Link className="navbar-brand" to="/">
             <img
-             onClick={()=>{
-               window.scrollTo(0, 0);
-            }
-          }
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
               loading="lazy"
               style={{
                 width: "40px",
@@ -51,11 +50,13 @@ function Navbar() {
             ></img>
           </Link>
           <div className=" text-center mt-3 d-lg-none">
-            <Link onClick={()=>{
-               window.scrollTo(0, 0);
-            }
-              
-            } className="text-white" to="/">
+            <Link
+              onClick={() => {
+                window.scrollTo(0, 0);
+              }}
+              className="text-white"
+              to="/"
+            >
               {" "}
               <h5 className="text-center text-white"> NED Admission Cell</h5>
             </Link>
@@ -87,7 +88,7 @@ function Navbar() {
             <ul className="navbar-nav nav-item1 me-auto mb-2 mb-lg-0">
               <li className="hover">
                 <Link
-                  className="nav-link active nav-item1 px-3  "
+                  className="nav-link text-white active nav-item1 px-3  "
                   to="/"
                   onClick={() => {
                     closeNav();
@@ -100,7 +101,7 @@ function Navbar() {
               </li>
               <li className="hover">
                 <Link
-                  className="nav-link active nav-item1 px-3  "
+                  className="nav-link text-white active nav-item1 px-3  "
                   to="/onlinecourses"
                   onClick={() => {
                     closeNav();
@@ -117,7 +118,7 @@ function Navbar() {
                     closeNav();
                     window.scrollTo(0, 0); // add this line to scroll to top
                   }}
-                  className="nav-link nav-item1 px-3 "
+                  className="nav-link text-white nav-item1 px-3 "
                   to="/news"
                 >
                   <i className="fa-sharp fa-solid fa-newspaper me-1"></i>
@@ -126,7 +127,7 @@ function Navbar() {
               </li>
               <li className="hover">
                 <Link
-                  className="nav-link nav-item1 px-3"
+                  className="nav-link text-white nav-item1 px-3"
                   to="/guidelines"
                   onClick={() => {
                     closeNav();
@@ -139,7 +140,7 @@ function Navbar() {
               </li>
               <li className="hover">
                 <Link
-                  className="nav-link nav-item1 px-3 "
+                  className="nav-link text-white nav-item1 px-3 "
                   to="/tests"
                   onClick={() => {
                     closeNav();
@@ -152,7 +153,7 @@ function Navbar() {
               </li>
               <li className="hover">
                 <Link
-                  className="nav-link nav-item1 px-3 "
+                  className="nav-link text-white nav-item1 px-3 "
                   to="/dept"
                   onClick={() => {
                     closeNav();
@@ -165,7 +166,7 @@ function Navbar() {
               </li>
               <li className="hover">
                 <Link
-                  className="nav-link nav-item1 px-3 "
+                  className="nav-link text-white nav-item1 px-3 "
                   to="/merit"
                   onClick={() => {
                     closeNav();
@@ -178,7 +179,7 @@ function Navbar() {
               </li>
               <li className="hover">
                 <Link
-                  className="nav-link nav-item1 px-3 "
+                  className="nav-link text-white nav-item1 px-3 "
                   to="/pastpaper"
                   onClick={() => {
                     closeNav();
@@ -191,7 +192,7 @@ function Navbar() {
               </li>
               <li className="hover">
                 <Link
-                  className="nav-link nav-item1 px-3 "
+                  className="nav-link text-white nav-item1 px-3 "
                   to="/faqs"
                   onClick={() => {
                     closeNav();

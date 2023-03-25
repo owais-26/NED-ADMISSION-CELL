@@ -160,10 +160,6 @@ const Footer = () => {
                     </a>
                   </p>
                   <p className="text-white">
-                    <i className="fa-solid me-2 fa-envelope"></i>{" "}
-                    hashimzia118@gmail.com
-                  </p>
-                  <p className="text-white">
                     <i className="fas fa-phone mr-3"></i> 0303 2785025
                   </p>
                   <p className="text-white">
@@ -240,7 +236,7 @@ const Footer = () => {
                 className="text-white"
                 to="/"
               >
-                www.nedadmissioncell.com &nbsp;
+                nedadmissioncell.com &nbsp;
               </Link>
                 | All Rights Reserved
             </p>
