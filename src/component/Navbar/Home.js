@@ -3,6 +3,8 @@ import { Helmet, HelmetProvider } from "react-helmet-async";
 
 import About from "./About";
 
+
+
 function Home() {
   useEffect(() => {
     document.title = "Home | Ned Admission Cell";
@@ -140,6 +142,7 @@ function Home() {
 
       <br />
       <About />
+    
     </>
   );
 }

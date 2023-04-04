@@ -30,16 +30,78 @@ const About = () => {
               data-aos="fade-up"
               className="text-justify px-5 hashim1 rounded-lg hashimpara py-4   para "
             >
-              The university admission process is a critical and challenging
-              phase in the life of every student. Our website is designed with
-              the aim of providing assistance to students preparing for their
-              entry tests and answering all of their inquiries. Furthermore, we
-              offer valuable information on various fields to guide students
-              towards becoming successful engineers and professionals in the
-              future. Our team is committed to guiding and assisting students
-              through every step of the admission process, from test preparation
-              to orientation day celebrations, ensuring that they are
-              well-prepared to be successfully admitted to NED University.
+              Our website provides a comprehensive range of resources to assist
+              students with their university admission process. We offer the
+              latest{" "}
+              <b>
+                {" "}
+                <a
+                  className="text-white"
+                  href="https://nedadmissioncell.com/news"
+                >
+                  News
+                </a>{" "}
+              </b>{" "}
+              regarding admission requirements and deadlines, as well as{" "}
+              <a
+                className="text-white"
+                href="https://nedadmissioncell.com/guidelines"
+              >
+                <b>Guidelines</b>
+              </a>{" "}
+              on how to prepare for the entry tests. Our platform features{" "}
+              <b>
+                {" "}
+                <a
+                  className="text-white"
+                  href="https://nedadmissioncell.com/pastpaper"
+                >
+                  Past Papers
+                </a>{" "}
+                and{" "}
+                <a
+                  className="text-white"
+                  href="https://nedadmissioncell.com/faqs"
+                >
+                  Frequently Asked Questions (FAQs)
+                </a>
+              </b>{" "}
+              to help students familiarize themselves with the{" "}
+              <a
+                className="text-white"
+                href="https://nedadmissioncell.com/tests"
+              >
+                <b>Test</b>
+              </a>{" "}
+              format and content. In addition, we provide valuable information
+              on various{" "}
+              <b>
+                {" "}
+                <a
+                  className="text-white"
+                  href="https://nedadmissioncell.com/dept"
+                >
+                  Departments
+                </a>
+              </b>{" "}
+              to guide students towards their desired fields of study. Our team
+              is committed to supporting students through every step of the
+              admission process, including the announcement of{" "}
+              <b>
+                {" "}
+                <a
+                  className="text-white"
+                  href="https://nedadmissioncell.com/merit"
+                >
+                  Merit Lists
+                </a>{" "}
+              </b>{" "}
+              and orientation day celebrations. With our website's assistance,
+              students can increase their chances of successfully gaining
+              admission to{" "}
+              <b>
+                <a className="text-white" href="https://www.neduet.edu.pk">NED University</a>
+              </b>
             </p>
           </div>
         </div>
@@ -247,7 +309,7 @@ const About = () => {
               <img
                 loading="lazy"
                 data-aos="fade-up"
-                src="mainpic1.png"
+                src="mainpic.png"
                 className="card-img-top rounded fbimg "
                 style={{
                   width: "370px",

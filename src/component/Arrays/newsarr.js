@@ -4,7 +4,7 @@ export const newsarr = [
     title: `Sample Questions For Computer Based Pre-Admission Entry Test Bachelor Programmes (Regular/Self Finance)`,
 
     description: `The university administration has announced the release of sample questions for the computer-based pre-admission entry test for bachelor programmes. The test will be conducted for both regular and self-finance students. The sample questions are designed to provide prospective students with an idea of the format and level of difficulty of the test. The computer-based pre-admission entry test is scheduled to take place in the coming weeks. The university administration has urged all prospective students to register for the test and to ensure that they are familiar with the test format and content.`,
-    file : `sample_test_paper.pdf`,
+    file: `sample_test_paper.pdf`,
     newsLink:
       "https://www.neduet.edu.pk/sites/default/files/Admissions-2023/sample_test_paper.pdf",
   },
@@ -23,7 +23,7 @@ export const newsarr = [
     description: `NED University has announced the distribution of seats for undergraduate programs, with a total of 2,701 seats being offered across various engineering & technology programs for the upcoming academic year.`,
     file: "news2.pdf",
     newsLink:
-      "https://www.neduet.edu.pk/sites/default/files/Admissions-2022/Distribution_of_Seats-2.pdf",
+      "https://www.neduet.edu.pk/sites/default/files/Admissions-2023/SeatsDistribution.pdf",
   },
   {
     image:

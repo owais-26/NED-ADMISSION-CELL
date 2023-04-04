@@ -15,7 +15,7 @@ const CircularProgress = ({ size, progress }) => {
   return (
     <svg width={size} height={size}>
       <circle
-        stroke="#181977"
+        stroke="#00046c"
         strokeWidth={strokeWidth}
         fill="transparent"
         r={radius}
@@ -23,7 +23,7 @@ const CircularProgress = ({ size, progress }) => {
         cy={size / 2}
       />
       <circle
-        stroke="#181977"
+        stroke="#00046c"
         strokeWidth={strokeWidth}
         strokeLinecap="round"
         fill="transparent"
@@ -43,7 +43,7 @@ const CircularProgress = ({ size, progress }) => {
         textAnchor="middle"
         fontSize="40"
         fontWeight="bold"
-        fill="#181977"
+        fill="#00046c"
         className="font-italic "
       >
         {progress}+

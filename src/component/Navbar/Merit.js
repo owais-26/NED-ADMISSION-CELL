@@ -87,7 +87,7 @@ useEffect(() => {
           <img
            
             className="d-block w-100"
-            src="merit list-1.jpg"
+            src="nedmerit22.jpeg"
             alt="First slide"
           />
         </Carousel.Item>
@@ -107,12 +107,7 @@ useEffect(() => {
             alt="Third slide"
           />
 
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
+         
         </Carousel.Item>
       </Carousel>
     </>

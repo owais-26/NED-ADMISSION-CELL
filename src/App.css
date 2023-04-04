@@ -1,6 +1,6 @@
 .text-decoration-underline {
- background: rgb(9,0,73);
-background: linear-gradient(90deg, rgba(9,0,73,1) 0%, rgba(0,4,108,1) 68%, rgba(22,0,176,1) 100%);
+ background: rgb(0,6,144);
+background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
   width: 6rem;
   height: 4px;
 }
@@ -18,12 +18,12 @@ background: linear-gradient(90deg, rgba(9,0,73,1) 0%, rgba(0,4,108,1) 68%, rgba(
   background-color: #040116;
 }
 .sec {
- background: rgb(9,0,73);
-background: linear-gradient(90deg, rgba(9,0,73,1) 0%, rgba(0,4,108,1) 68%, rgba(22,0,176,1) 100%);
+ background: rgb(0,6,144);
+background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
 }
 .navbar {
-  background: rgb(9,0,73);
-background: linear-gradient(90deg, rgba(9,0,73,1) 0%, rgba(0,4,108,1) 50%, rgba(22,0,176,1) 100%);
+ background: rgb(0,6,144);
+background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
 }
 
 .logo {
@@ -300,8 +300,8 @@ a {
   /* color: black !important; */
 }
 .hashim1 {
- background: rgb(9,0,73);
-background: linear-gradient(90deg, rgba(9,0,73,1) 0%, rgba(0,4,108,1) 68%, rgba(22,0,176,1) 100%);
+ background: rgb(0,6,144);
+background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
 }
 .hashimpara {
   color: white !important;
@@ -327,7 +327,7 @@ body {
   margin: auto;
 }
 .underline {
-  color: rgb(11, 21, 151);
+  color: #00046c;
 }
 .rounded-edges {
   border-radius: 10px;
