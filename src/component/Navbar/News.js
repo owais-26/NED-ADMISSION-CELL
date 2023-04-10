@@ -41,7 +41,7 @@ export default function News() {
             ></div>
           </div>
           {newsarr.map((item, index) => (
-            <div key={index}>
+            <div key={index} data-aos="fade-up" data-aos-duration="1000">
               {
                 <NewsItem
                   title={item.title}

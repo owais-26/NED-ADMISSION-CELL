@@ -51,7 +51,7 @@ function App() {
             {" "}
           </Route>
         </Routes>
-        <WhatsApp />
+        <WhatsApp  />
         <Footer />
       </BrowserRouter>
     </>

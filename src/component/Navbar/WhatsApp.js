@@ -7,7 +7,7 @@ const WhatsApp = () => {
 `); // replace with your default message
   const url = `https://wa.me/${phoneNumber}?text=${message}`;
   return (
-    <div>
+    <div >
       <a
         href={url}
         title="WhatsApp"

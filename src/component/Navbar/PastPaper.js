@@ -29,6 +29,7 @@ export default function PastPaper() {
       </h1>
       <div
         data-aos="fade-up"
+        data-aos-duration="1300"
         className="  text-decoration-underline mb-4 mx-auto"
       ></div>
       <p data-aos="fade-down" className="text-justify container">
@@ -45,9 +46,15 @@ export default function PastPaper() {
         Get started today by clicking on the link provided below.
       </p>
 
-      <div className="a  container mt-5">
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1300"
+        className="a  container mt-5"
+      >
         {pprArr.map((item, index) => (
           <div
+            data-aos="fade-up"
+            data-aos-duration="1300"
             className="b m-3"
             style={{
               width: "300px",

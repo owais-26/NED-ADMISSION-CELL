@@ -26,12 +26,13 @@ const Guidelines = () => {
             Criteria
           </h1>
           <div
-            data-aos="fade-up"
+            data-aos="fade-up" data-aos-duration="1000"
             className="  text-decoration-underline mb-4 mx-auto"
           ></div>
         </div>
         <section
-          data-aos="fade-up"
+          data-aos="fade-up" data-aos-duration="1000"
+     
           className=" text-justify guide mx-5 px-5 pt-2"
         >
           When preparing for NED University's conceptual entry test, it's
@@ -55,27 +56,27 @@ const Guidelines = () => {
           portion of the test is diverse and unpredictable. However, there are
           some general strategies you can use to help you succeed.
           <ul>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-duration="1000" >
               For Mathematics, memorizing all formulas and learning short tricks
               from online resources is highly recommended. Practicing with MCQs
               from popular preparation books such as Dogar's, Anees Hussain, and
               IBA grads can also be helpful. For strengthening your concepts,
               you can follow channels like <b> Mathsflix by Hashim Zia.</b>
             </li>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-duration="1000">
               For Physics, it's important to memorize all formulas, but also to
               build up your concepts. Reading the textbook and summaries, and
               consulting online resources like <b> Physics by Bilal Zia</b> can
               help you in this regard. Solving MCQs from previous days' tests
               can also be helpful.
             </li>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-duration="1000">
               For Chemistry, the same tips as for Physics apply, with the
               addition of online resources such as{" "}
               <b>Sir Anas Soorty, Sir Nasim Zulfiqar, and Chemistrically </b>{" "}
               for clarification of concepts.
             </li>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-duration="1000">
               For English, focusing on basic concepts such as tenses, grammar,
               and prepositions, and practicing with past papers, is recommended.
               Learning past paper vocabularies on a daily basis can also be
@@ -83,7 +84,7 @@ const Guidelines = () => {
               <b>Sir Nasim Zulfiqar, Dear Sir, and Amin Education </b> for
               further guidance.
             </li>
-            <li data-aos="fade-up">
+            <li data-aos="fade-up" data-aos-duration="1000">
               For Computer Science, preparing from your intermediate books/notes
               of the computer and using online resources like Dogars Ecat
               preparation book and Ecat websites can be helpful. It's important
@@ -93,7 +94,7 @@ const Guidelines = () => {
               keys of Word, Excel, and MS Access can also be beneficial.
             </li>
           </ul>{" "}
-          <p data-aos="fade-up">
+          <p data-aos="fade-up" data-aos-duration="1000">
             {" "}
             <b>Anees Hussain, IBA Grads and Dogars ECAT </b> book are good
             resources for practice. In summary, to succeed in NED's conceptual
@@ -104,8 +105,8 @@ const Guidelines = () => {
             portion of the test is diverse and unpredictable, but by following
             the tips outlined above, you can increase your chances of success.
           </p>{" "}
-          <h3 data-aos="fade-up">For O/A Levels Students</h3>
-          <p data-aos="fade-up">
+          <h3 data-aos="fade-up" data-aos-duration="1000">For O/A Levels Students</h3>
+          <p data-aos="fade-up" data-aos-duration="1000">
             For an O/A Levels student, preparing for Aptitude exams is easily
             achievable without enrolling in any specialized institution. This is
             because students with A-levels background usually possess a strong
@@ -134,16 +135,16 @@ const Guidelines = () => {
           </p>
         </section>
         <div>
-          <h2 data-aos="fade-up" className="text-center mt-4">
+          <h2 data-aos="fade-up" data-aos-duration="1000" className="text-center mt-4">
             <i className="fa-solid fa-link"></i> Useful Links
           </h2>
           <div
-            data-aos="fade-up"
+            data-aos="fade-up" data-aos-duration="1000"
             className="  text-decoration-underline mb-4 mx-auto"
           ></div>
         </div>
         <section
-          data-aos="fade-up"
+          data-aos="fade-up" data-aos-duration="1000"
           className="text-justify guide mx-5 px-5 pt-2"
         >
           <b>
@@ -230,7 +231,6 @@ const Guidelines = () => {
                   NED SEATS DISTRIBUTION
                 </a>
               </li>
-             
             </ul>
           </b>
         </section>

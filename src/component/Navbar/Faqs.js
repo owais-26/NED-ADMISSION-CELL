@@ -33,6 +33,7 @@ const Faqs = () => {
 
         <div
           data-aos="fade-up"
+          data-aos-duration="1300"
           className="  text-decoration-underline mb-4 mx-auto"
         ></div>
       </div>
@@ -46,7 +47,7 @@ const Faqs = () => {
           }}
         />{" "}
       </div>
-      <div className="faq ">
+      <div className="faq " data-aos="fade-up" data-aos-duration="1300">
         {faqArr
           .filter((val) => {
             if (searchTerm === "") {
@@ -63,7 +64,7 @@ const Faqs = () => {
           })
           .map((item, index) => {
             return (
-              <Faqsitem
+              <Faqsitem 
                 key={index}
                 question={item.Question}
                 answer={item.Answer}

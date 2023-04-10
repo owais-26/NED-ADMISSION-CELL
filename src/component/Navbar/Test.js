@@ -35,7 +35,7 @@ const Test = (props) => {
               &#8203;
             </h1>
             <div
-              data-aos="fade-up"
+              data-aos="fade-up" data-aos-duration="1300"
               className="  text-decoration-underline mb-4 mx-auto"
             ></div>
           </div>
@@ -59,7 +59,7 @@ const Test = (props) => {
             test day.
           </p>
           <div
-            data-aos="fade-up"
+            data-aos="fade-up" data-aos-duration="1300"
             style={{
               width: "100%",
               height: "3rem",
@@ -69,7 +69,7 @@ const Test = (props) => {
             }}
           >
             <div
-              data-aos="fade-up"
+              data-aos="fade-up" data-aos-duration="1300"
               style={{
                 width: "100%",
                 boxSizing: "border-box",
@@ -81,7 +81,7 @@ const Test = (props) => {
               <h5>Mock</h5>
             </div>
             <div
-              data-aos="fade-up"
+              data-aos="fade-up" data-aos-duration="1300"
               style={{
                 width: "100%",
                 borderBottom: activeComp === "maths" ? "3px solid blue" : "0",
@@ -92,7 +92,7 @@ const Test = (props) => {
               <h5>Maths</h5>
             </div>
             <div
-              data-aos="fade-up"
+              data-aos="fade-up" data-aos-duration="1300"
               style={{
                 width: "100%",
                 borderBottom: activeComp === "physics" ? "3px solid blue" : "0",
@@ -103,7 +103,7 @@ const Test = (props) => {
               <h5>Physics</h5>
             </div>
             <div
-              data-aos="fade-up"
+              data-aos="fade-up" data-aos-duration="1300"
               style={{
                 width: "100%",
                 borderBottom:

@@ -13,21 +13,21 @@ const About = () => {
     <>
       <section className="mission   ">
         <div>
-          <div data-aos="fade-up" className=" ">
+          <div data-aos="fade-up"  data-aos-duration="1000" className=" ">
             <div className="  text-center">
-              <h1 data-aos="fade-up" className="h1seo ">
+              <h1 data-aos="fade-up"  data-aos-duration="1000" className="h1seo ">
                 <b>
                   <i className="fa-solid fa-pen"></i> Our Mission at{" "}
                   <br className="br" /> NED Admission Cell
                 </b>
               </h1>
               <div
-                data-aos="fade-down"
+                data-aos="fade-down" data-aos-duration="1000"
                 className=" text-decoration-underline mb-3 mx-auto"
               ></div>
             </div>
             <p
-              data-aos="fade-up"
+              data-aos="fade-up"  data-aos-duration="1000"
               className="text-justify px-5 hashim1 rounded-lg hashimpara py-4   para "
             >
               Our website provides a comprehensive range of resources to assist
@@ -108,14 +108,14 @@ const About = () => {
       </section>
       <section className="text-center">
         <div className=" col-md-12 mt-5 mb-5 text-center">
-          <h2 data-aos="fade-down" className=" ">
+          <h2 data-aos="fade-down" data-aos-duration="1000" className=" ">
             {" "}
             <b>
               <i className="fa-solid fa-pen"></i> Meet The Team
             </b>{" "}
           </h2>
           <div
-            data-aos="fade-up"
+            data-aos="fade-up"  data-aos-duration="1000"
             className=" text-decoration-underline mx-auto"
           ></div>
         </div>
@@ -125,7 +125,7 @@ const About = () => {
             <div className="col-md-4 m-auto Hashim-Pic">
               <img
                 loading="lazy"
-                data-aos="fade-down"
+                data-aos="fade-down" data-aos-duration="1000"
                 src="hashim.jpg"
                 className="img-fluid w-75 rounded-circle"
                 alt="hashim"
@@ -133,14 +133,14 @@ const About = () => {
             </div>
             <div className="col-md-8">
               <div className="card-body vertical1">
-                <h3 data-aos="fade-up" className="text-center hashimpara">
+                <h3 data-aos="fade-up"  data-aos-duration="1000" className="text-center hashimpara">
                   Founder
                 </h3>
-                <h4 data-aos="fade-down" className="card-title hashimpara">
+                <h4 data-aos="fade-down" data-aos-duration="1000" className="card-title hashimpara">
                   Engr. Muhammad Hashim Zia
                 </h4>
                 <p
-                  data-aos="fade-up"
+                  data-aos="fade-up"  data-aos-duration="1000"
                   className="card-text text-justify  hashimpara"
                 >
                   As an Industrial Manufacturing engineer with a passion for
@@ -172,7 +172,7 @@ const About = () => {
       <section>
         <div className="text-center container ">
           <div className="row justify-content-center">
-            <div data-aos="fade-up" className="col-12 text-center ">
+            <div data-aos="fade-up"  data-aos-duration="1000" className="col-12 text-center ">
               <h3 className="mb-2 mt-4">
                 {" "}
                 <b>
@@ -183,7 +183,7 @@ const About = () => {
             </div>
             <div className="col-md-6 col-lg-3   mb-4">
               <div
-                data-aos="fade-down"
+                data-aos="fade-down" data-aos-duration="1000"
                 className="card rounded-lg hashim1 shade"
               >
                 <img
@@ -201,7 +201,7 @@ const About = () => {
               </div>
             </div>
             <div className="col-md-6 col-lg-3 mb-4">
-              <div data-aos="fade-up" className="card rounded-lg hashim1 shade">
+              <div data-aos="fade-up"  data-aos-duration="1000" className="card rounded-lg hashim1 shade">
                 <img
                   loading="lazy"
                   src="zafrullah.jpg"
@@ -218,7 +218,7 @@ const About = () => {
             </div>
             <div className="col-md-6 col-lg-3 mb-4">
               <div
-                data-aos="fade-down"
+                data-aos="fade-down" data-aos-duration="1000"
                 className="card rounded-lg hashim1 shade"
               >
                 <img
@@ -237,7 +237,7 @@ const About = () => {
             </div>
             <div className="col-md-6 col-lg-3 mb-4">
               <div
-                data-aos="fade-up"
+                data-aos="fade-up"  data-aos-duration="1000"
                 className="card hashim1 rounded-lg  shade"
               >
                 <img
@@ -259,19 +259,19 @@ const About = () => {
       </section>
       <div className="">
         <div className=" col-md-12 mt-5 mb-5 ">
-          <h2 data-aos="fade-down" className=" text-center">
+          <h2 data-aos="fade-down" data-aos-duration="1000" className=" text-center">
             {" "}
             <b>
               <i className="fa-solid fa-pen"></i> Join Us Now!
             </b>{" "}
           </h2>
           <div
-            data-aos="fade-up"
+            data-aos="fade-up"  data-aos-duration="1000"
             className="  text-decoration-underline mb-4 mx-auto"
           ></div>
           <div className="container2">
             <div className="container1">
-              <div data-aos="fade-down" style={{ margin: "auto" }}>
+              <div data-aos="fade-down" data-aos-duration="1000" style={{ margin: "auto" }}>
                 <MyCircularProgress />
                 <div>
                   <h3 className="mt-2 underline">
@@ -279,7 +279,7 @@ const About = () => {
                   </h3>
                 </div>
               </div>
-              <div data-aos="fade-up" className="" style={{ margin: "auto" }}>
+              <div data-aos="fade-up"  data-aos-duration="1000" className="" style={{ margin: "auto" }}>
                 <MyCircularProgress1 />
                 <div className="">
                   <h3 className="mt-2 underline">
@@ -287,7 +287,7 @@ const About = () => {
                   </h3>
                 </div>
               </div>
-              <div data-aos="fade-down" className="" style={{ margin: "auto" }}>
+              <div data-aos="fade-down" data-aos-duration="1000" className="" style={{ margin: "auto" }}>
                 <MyCircularProgress2 />
                 <div>
                   <h3 className="mt-2 underline">
@@ -300,7 +300,7 @@ const About = () => {
           <div>
             {/* <Fb /> */}
             <div
-              data-aos="fade-up"
+              data-aos="fade-up"  data-aos-duration="1000"
               className="card container fbcard  mt-5 hashim1 rounded shade mb-3"
               style={{
                 width: "600px",
@@ -308,7 +308,7 @@ const About = () => {
             >
               <img
                 loading="lazy"
-                data-aos="fade-up"
+                data-aos="fade-up"  data-aos-duration="1000"
                 src="mainpic.png"
                 className="card-img-top rounded fbimg "
                 style={{
@@ -318,7 +318,7 @@ const About = () => {
                 alt="ned fb"
               />
               <div className="card-body  text-center">
-                <h4 data-aos="fade-down" className="hashimpara card-title">
+                <h4 data-aos="fade-down" data-aos-duration="1000" className="hashimpara card-title">
                   NED ADMISSION CELL <br />{" "}
                   <p className="card-text ">
                     <small className="text-muted hashimpara ">
@@ -326,7 +326,7 @@ const About = () => {
                     </small>
                   </p>
                 </h4>
-                <div data-aos="fade-down" className="parent-container mb-2">
+                <div data-aos="fade-down" data-aos-duration="1000" className="parent-container mb-2">
                   <a
                     rel="noopener noreferrer"
                     href="https://www.facebook.com/groups/396363091463993"
@@ -338,7 +338,7 @@ const About = () => {
                   </a>
                 </div>
                 <p
-                  data-aos="fade-down"
+                  data-aos="fade-down" data-aos-duration="1000"
                   className="card-text text-justify hashimpara"
                 >
                   Greetings to all members and new additions to our community.
@@ -382,15 +382,15 @@ const About = () => {
           </div>
         </div>
       </div>
-      <section data-aos="fade-up" className="container text-center mt-5 ">
-        <h2 data-aos="fade-down" className=" mt-5 text-center">
+      <section data-aos="fade-up"  data-aos-duration="1000" className="container text-center mt-5 ">
+        <h2 data-aos="fade-down" data-aos-duration="1000" className=" mt-5 text-center">
           {" "}
           <b>
             <i className="fa-solid fa-pen"></i> Our Feedbacks!
           </b>{" "}
         </h2>
         <div
-          data-aos="fade-up"
+          data-aos="fade-up"  data-aos-duration="1000"
           className="  text-decoration-underline mb-4 mx-auto"
         ></div>
         <Feedback />
