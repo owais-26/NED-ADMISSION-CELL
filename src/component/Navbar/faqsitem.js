@@ -4,7 +4,7 @@ import { Accordion } from "react-bootstrap-accordion";
 const Faqsitem = (props) => {
   return (
     <>
-      <div data-aos="fade-up" className="mb-3">
+      <div data-aos="fade-up" data-aos-duration="2200" className="mb-3">
         <div className="container  ">
           <Accordion
             className="rounded-edges text-black"

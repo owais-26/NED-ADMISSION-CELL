@@ -2,11 +2,11 @@ import React from "react";
 
 import Card from "react-bootstrap/Card";
 
-const Pastitem = (props) => {
+const Pastitem = ({props}) => {
   return (
     <>
       <div
-        data-aos="fade-up"
+        data-aos="fade-up" data-aos-duration="2200"
         style={{
           width: "300px",
         }}
@@ -16,7 +16,7 @@ const Pastitem = (props) => {
             <Card.Img
             alt='Different subjects are shown'
               variant="top"
-              src={props.img}
+              src={props.imgUrl}
               style={{
                 width: "250px",
                 "borderRadius": "20px",
@@ -24,7 +24,7 @@ const Pastitem = (props) => {
             />
           </div>
           <Card.Body>
-            <h5 className="text-center p-2 ">{props.name}</h5>
+            <h5 className="text-center p-2 ">{props.title}</h5>
             <div className="text-center">
               <button type="button"  className="btn  btn-outline-primary">
                 <a  rel="noopener noreferrer" className="pastpprlink" href={props.link} target="_blank">
