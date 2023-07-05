@@ -17,6 +17,7 @@ const Faqs = () => {
        await Req.get(`/faq/getfaq`).then((response) => {
          if (response.status === 200) {
            setFaqs(response.data);
+           
           setTimeout(() => {
             setIsLoading(false);
           }, 1000);
@@ -74,11 +75,11 @@ console.log(Faqs)
                 if (searchTerm === "") {
                   return val;
                 } else if (
-                  val.Question.toLowerCase().includes(searchTerm.toLowerCase())
+                  val.question.toLowerCase().includes(searchTerm.toLowerCase())
                 ) {
                   return <div style={{ backgroundColor: "yellow" }}>{val}</div>;
                 } else if (
-                  val.Answer.toLowerCase().includes(searchTerm.toLowerCase())
+                  val.answer.toLowerCase().includes(searchTerm.toLowerCase())
                 ) {
                   return <div style={{ backgroundColor: "yellow" }}>{val}</div>;
                 }

@@ -564,6 +564,25 @@ h6 {
 .my-float{
 	margin-top:16px;
 }
-.newsBadge{
-  
+.loaderImg{
+  display: block;
+  width: 150px;
+  margin: auto;
 }
+.loaderImg {
+  animation: blink 1s infinite;
+  transition: opacity 1s ease-in-out;
+}
+
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+

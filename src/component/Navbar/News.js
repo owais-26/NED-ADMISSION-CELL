@@ -8,6 +8,7 @@ import Loader from "./Loader";
 
 
 export default function News() {
+  
   const [News, setNews] = useState();
    const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -18,7 +19,9 @@ export default function News() {
         if (response.status===200){
           setNews(response.data)
           setIsLoading(false)  
+          
         }
+        
       })
     }
     getNews()
@@ -26,9 +29,10 @@ export default function News() {
 console.log(News&& News.reverse())
   // const [OpenDept, setOpenDept] = useState("default");
 const sortedNews =
-  News && News.sort((a, b) => new Date(a.createdAt) - new Date(b.createdAt));
+  News && News.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
   return (
     <>
+      
       <HelmetProvider>
         <Helmet>
           <meta name="theme-color" content="#4285f4" />
@@ -47,23 +51,26 @@ const sortedNews =
       ) : (
         <>
           <div>
-            <h1 data-aos="fade-down" data-aos-duration="2200"className="text-center h1seo mt-3">
+            <h1
+              data-aos="fade-down"
+              data-aos-duration="2200"
+              className="text-center h1seo mt-3"
+            >
               <i className="fa-sharp fa-solid fa-newspaper me-1"></i> News &
               Updates &#8203; &#8203; &#8203;
             </h1>
             <div
-              data-aos="fade-up" data-aos-duration="2200"
+              data-aos="fade-up"
+              data-aos-duration="2200"
               className="  text-decoration-underline mb-4 mx-auto"
             ></div>
           </div>
           <div>
             {isLoading ? (
-              
-                <Loader/>
-              
+              <Loader />
             ) : (
               sortedNews.map((item, index) => (
-                <div key={index} data-aos="fade-up" data-aos-duration="2200" >
+                <div key={index} data-aos="fade-up" data-aos-duration="2200">
                   <NewsItem
                     title={item.title}
                     image={item.imgUrl}
