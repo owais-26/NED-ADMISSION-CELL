@@ -586,3 +586,20 @@ h6 {
   }
 }
 
+.hoverBlog:hover{
+  background-color: #9faef383;
+}
+.bgimage{
+   background-image: url('../public/blogimg.jpg');
+    
+    background-size: cover;
+  
+    background-position: center center;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+a{
+  color: rgb(3, 0, 201);
+}
+.text-congrats{
+  color: #00ff00 !important;
+}

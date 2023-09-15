@@ -193,6 +193,19 @@ function Navbar() {
               <li className="hover">
                 <Link
                   className="nav-link text-white nav-item1 px-3 "
+                  to="/blogs"
+                  onClick={() => {
+                    closeNav();
+                    window.scrollTo(0, 0); // add this line to scroll to top
+                  }}
+                >
+                  <i class="fa-solid fa-blog me-1"></i>
+                  Blogs
+                </Link>
+              </li>
+              <li className="hover">
+                <Link
+                  className="nav-link text-white nav-item1 px-3 "
                   to="/faqs"
                   onClick={() => {
                     closeNav();

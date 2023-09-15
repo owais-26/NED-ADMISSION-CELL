@@ -12,6 +12,9 @@ import News from "./component/Navbar/News";
 import Test from "./component/Navbar/Test";
 import Courses from "./component/Navbar/Courses";
 import WhatsApp from "./component/Navbar/WhatsApp";
+import Blogs from "./component/Navbar/Blogs";
+import Blog1 from "./component/Navbar/Blog1";
+
 
 
 
@@ -50,6 +53,14 @@ function App() {
           <Route  path="/onlinecourses" element={<Courses />}>
             {" "}
           </Route>
+          <Route  path="/blogs" element={<Blogs />}>
+            {" "}
+          </Route>
+          <Route path="/blogs/gaining-edge-with-programming-languages" element={<Blog1/>} >
+
+          </Route>
+          
+          
         </Routes>
         <WhatsApp  />
         <Footer />
