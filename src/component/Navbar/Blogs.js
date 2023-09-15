@@ -27,7 +27,7 @@ export default function Blogs() {
             </HelmetProvider>
            {isLoading ? <Loader/> :  <>
                 <h1 data-aos="fade-down" data-aos-duration="600" className="mt-3 text-center h1seo">
-                    <i class="fa-solid fa-blog me-1"></i> Blogs
+                    <i className="fa-solid fa-blog me-1"></i> Blogs
                     &#8203; &#8203; &#8203; &#8203; &#8203; &#8203;
                 </h1>
                 <div
@@ -36,18 +36,18 @@ export default function Blogs() {
                 ></div>
                 <Link to="gaining-edge-with-programming-languages" >
 
-                    <div class="card mb-3 container rounded hoverBlog" >
-                        <div class="row g-0">
-                            <div class="col-md-4 ">
-                                <img src="blog1.jpg" class="img-fluid rounded-start rounded" alt="..." />
+                    <div className="card mb-3 container rounded hoverBlog" >
+                        <div className="row g-0">
+                            <div className="col-md-4 ">
+                                <img src="blog1.jpg" className="img-fluid rounded-start rounded" alt="..." />
                             </div>
-                            <div class="col-md-8">
-                                <div class="card-body">
-                                    <h4 class="card-title">Mastering the Code: A Roadmap for Success in Computer & IT Programs</h4>
-                                    <h5 class="card-text">Your Guide to Programming Excellence and University Triumph</h5>
-                                    <p class="card-text mt-3"><small class="text-body-secondary">Published By
+                            <div className="col-md-8">
+                                <div className="card-body">
+                                    <h4 className="card-title">Mastering the Code: A Roadmap for Success in Computer & IT Programs</h4>
+                                    <h5 className="card-text">Your Guide to Programming Excellence and University Triumph</h5>
+                                    <p className="card-text mt-3"><small className="text-body-secondary">Published By
                                         <a className='mx-2 text-primary mt-1' href="https://owaisdev-owais-26.vercel.app/">Owais Ansari</a></small></p>
-                                    <p class="card-text mt-3 text-muted">15 Sep 2023</p>
+                                    <p className="card-text mt-3 text-muted">15 Sep 2023</p>
                                 </div>
                             </div>
                         </div>

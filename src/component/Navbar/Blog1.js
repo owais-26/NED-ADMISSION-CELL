@@ -32,7 +32,7 @@ export default function Blog1() {
                 <div data-aos="fade-up" data-aos-duration="600" className="container col-md-6 mt-5">
                 <section>
                     <h1>The Path to Success</h1>
-                    <p>Now, many of you are wondering about the languages you can learn to gain an edge during your first year of studies. Here's some advice on languages and other important information:</p>
+                        <p>As you embark on your journey in the world of computer sciences, you might be eager to know how to excel in your first year. Many of you are probably wondering about the programming languages that can give you an edge. Here's some valuable advice on languages and other essential information to get you started on the right foot:</p>
 
                     <p>I strongly recommend starting to learn a programming language, preferably Python or C++, right away. Use this time wisely to grasp the fundamental concepts of programming. I assure you that this will give you an advantage over your peers in the first year. It's not as difficult as it may seem; all it requires is logic and practice.</p>
                 </section>
