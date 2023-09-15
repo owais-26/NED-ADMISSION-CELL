@@ -8,7 +8,7 @@ const CircularProgress = ({ size, progress }) => {
   const [offset, setOffset] = useState(0);
 
   useEffect(() => {
-    const progressOffset = ((10000 - progress) / 10000) * circumference;
+    const progressOffset = ((15000 - progress) / 15000) * circumference;
     setOffset(progressOffset);
   }, [circumference, progress]);
 
@@ -61,11 +61,11 @@ const MyCircularProgress1 = () => {
       if (entries[0].isIntersecting) {
         const interval = setInterval(() => {
           setProgress((prevProgress) => {
-            if (prevProgress === 10000) {
+            if (prevProgress === 15000) {
               clearInterval(interval);
-              return 10000;
+              return 15000;
             } else {
-              return prevProgress + 50;
+              return prevProgress + 100;
             }
           });
         }, 20);

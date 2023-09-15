@@ -53,7 +53,7 @@ const sortedNews =
           <div>
             <h1
               data-aos="fade-down"
-              data-aos-duration="2200"
+              data-aos-duration="600" data-aos-easing='ease-out-sine'
               className="text-center h1seo mt-3"
             >
               <i className="fa-sharp fa-solid fa-newspaper me-1"></i> News &
@@ -61,7 +61,7 @@ const sortedNews =
             </h1>
             <div
               data-aos="fade-up"
-              data-aos-duration="2200"
+              data-aos-duration="600" data-aos-easing='ease-out-sine'
               className="  text-decoration-underline mb-4 mx-auto"
             ></div>
           </div>
@@ -70,7 +70,7 @@ const sortedNews =
               <Loader />
             ) : (
               sortedNews.map((item, index) => (
-                <div key={index} data-aos="fade-up" data-aos-duration="2200">
+                <div key={index} data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'>
                   <NewsItem
                     title={item.title}
                     image={item.imgUrl}

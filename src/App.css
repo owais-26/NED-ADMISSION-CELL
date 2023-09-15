@@ -1,6 +1,7 @@
 .text-decoration-underline {
- background: rgb(0,6,144);
-background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
+ background: rgb(11,24,83);
+background: linear-gradient(298deg, rgba(11,24,83,1) 0%, rgba(30,12,96,1) 100%);
+
   width: 6rem;
   height: 4px;
 }
@@ -18,12 +19,14 @@ background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(
   background-color: #040116;
 }
 .sec {
- background: rgb(0,6,144);
-background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
+ background: rgb(11,24,83);
+background: linear-gradient(298deg, rgba(11,24,83,1) 0%, rgba(30,12,96,1) 100%);
+
 }
 .navbar {
- background: rgb(0,6,144);
-background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
+ background: rgb(11,24,83);
+background: linear-gradient(298deg, rgba(11,24,83,1) 0%, rgba(30,12,96,1) 100%);
+
 }
 
 .logo {
@@ -61,10 +64,10 @@ background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(
       
     }
   }
-@import url('https://fonts.googleapis.com/css2?family=Asul&family=Open+Sans&family=Secular+One&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Secular+One&family=Varela&display=swap');
 .nav-item1 {
   color: white !important;
-  font-family: "Asul", serif !important;
+  font-family: "Roboto", serif !important;
   /* font-size: 1rem; */
   /* font-weight: bold; */
   font-size: 16px;
@@ -245,8 +248,9 @@ h5,
 h6 {
   font-family: "Secular One", sans-serif !important;
 }
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 p {
-  font-family: "Asul", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
   color: black !important;
   font-size: 1rem !important;
 
@@ -257,20 +261,20 @@ p {
   margin: 0px !important;
 }
 section{
-  font-family: "Asul", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   color: black !important;
   font-size: 1rem !important;
 
   font-size: 1.001rem;
 }
 .testitem {
-  font-family: "Asul", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
 }
 .hashim {
   margin: auto;
 }
 a {
-  font-family: "Asul", sans-serif !important;
+  font-family: "Roboto", sans-serif !important;
   font-size: 14.5px;
 }
 @media (max-width: 768px) {
@@ -300,14 +304,15 @@ a {
   /* color: black !important; */
 }
 .hashim1 {
- background: rgb(0,6,144);
-background: linear-gradient(90deg, rgba(0,6,144,1) 0%, rgba(9,0,73,1) 50%, rgba(0,6,144,1) 100%);
+ background: rgb(11,24,83);
+background: linear-gradient(298deg, rgba(11,24,83,1) 0%, rgba(30,12,96,1) 100%);
+
 }
 .hashimpara {
   color: white !important;
 }
 body {
-  background-color: rgb(233, 231, 231) ;
+  background-color: rgba(247, 241, 241, 0.829) ;
 }
 
 .container1 {

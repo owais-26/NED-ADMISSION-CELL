@@ -80,12 +80,12 @@ export default function Dept() {
               style={{
                 color: "white ",
               }}
-              data-aos="fade-down" data-aos-duration="2200"
+              data-aos="fade-down" data-aos-duration="600" data-aos-easing='ease-out-sine'
               className="p-4 pt-5"
             >
               <h5>Faculties and Departments</h5>
               <ul
-                data-aos="fade-down" data-aos-duration="2200"
+                data-aos="fade-down" data-aos-duration="600" data-aos-easing='ease-out-sine'
                 className="list-unstyled components  mb-5"
               >
                 <li>

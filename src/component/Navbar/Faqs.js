@@ -46,7 +46,7 @@ console.log(Faqs)
       ) : (
         <>
           <div>
-            <h1 data-aos="fade-up" data-aos-duration="2200" className="mt-3 h1seo text-center">
+            <h1 data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' className="mt-3 h1seo text-center">
               {" "}
               &nbsp; &nbsp;
               <i className="fa-sharp fa-solid fa-person-circle-question me-1"></i>{" "}
@@ -54,12 +54,12 @@ console.log(Faqs)
             </h1>
 
             <div
-              data-aos="fade-up" data-aos-duration="2200"
+              data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
               
               className="  text-decoration-underline mb-4 mx-auto"
             ></div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="2200" className="searchBox text-center mb-5 ">
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' className="searchBox text-center mb-5 ">
             <input
               className="search_input "
               type="text"
@@ -69,7 +69,7 @@ console.log(Faqs)
               }}
             />{" "}
           </div>
-          <div className="faq " data-aos="fade-up" data-aos-duration="2200" >
+          <div className="faq " data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' >
             {Faqs &&
               Faqs.filter((val) => {
                 if (searchTerm === "") {

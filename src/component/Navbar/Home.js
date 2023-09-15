@@ -35,9 +35,9 @@ function Home() {
         <>
           <div
             data-aos= 'fade-up'
-            data-aos-duration ='2200'
+            data-aos-duration ='600'
             id="carouselExampleDark"
-            className="carousel carousel-dark slide mb-3"
+            className="carousel carousel-dark slide mb-3 "
             data-bs-ride="carousel"
           >
             <div className="carousel-indicators">

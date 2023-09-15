@@ -34,16 +34,16 @@ const Courses = () => {
         </HelmetProvider>
         { isLoading ? <Loader/> :(
           <>
-            <h1 data-aos="fade-down" data-aos-duration="2200"className="mt-3 text-center h1seo">
+            <h1 data-aos="fade-down" data-aos-duration="600" data-aos-easing='ease-out-sine'className="mt-3 text-center h1seo">
               <i className="fa-solid fa-house-laptop me-1"></i> Online Courses
               &#8203; &#8203; &#8203; &#8203; &#8203; &#8203;
             </h1>
             <div
-              data-aos="fade-up" data-aos-duration="2200"
+              data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
               className="  text-decoration-underline mb-4 mx-auto"
             ></div>
             <section
-              data-aos="fade-up" data-aos-duration="2200"
+              data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
               className="card container newsCard shade  rounded mb-3 "
             >
               <div className="card-body">

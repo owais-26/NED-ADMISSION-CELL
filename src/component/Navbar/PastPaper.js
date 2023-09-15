@@ -45,16 +45,16 @@ export default function PastPaper() {
         <Loader />
       ) : (
         <>
-          <h1 data-aos="fade-down" data-aos-duration="2200" className="text-center h1seo mt-4">
+          <h1 data-aos="fade-down" data-aos-duration="600" data-aos-easing='ease-out-sine' className="text-center h1seo mt-4">
             {" "}
             <i className="fa-sharp fa-solid fa-clipboard me-1"></i> Study
             Material & Past Papers
           </h1>
           <div
-           data-aos="fade-up" data-aos-duration="2200"
+           data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
             className="  text-decoration-underline mb-4 mx-auto"
           ></div>
-          <p data-aos="fade-down" data-aos-duration="2200" className="text-justify container">
+          <p data-aos="fade-down" data-aos-duration="600" data-aos-easing='ease-out-sine' className="text-justify container">
             Looking to kickstart your aptitude preparations? Look no further
             than this comprehensive study material drive! With sections
             dedicated to physics, chemistry, math, biology, computer science,
@@ -69,7 +69,7 @@ export default function PastPaper() {
             today by clicking on the link provided below.
           </p>
           <div
-           data-aos="fade-up" data-aos-duration="2200"
+           data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
             className="a  container mt-5"
           >
             {isLoading ? <Loader/> :   Papers &&

@@ -6,7 +6,7 @@ const Pastitem = ({props}) => {
   return (
     <>
       <div
-        data-aos="fade-up" data-aos-duration="2200"
+        data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
         style={{
           width: "300px",
         }}
