@@ -55,17 +55,84 @@ export default function AddBlogs() {
         navigate("/editor")
     }
     return (
-        <div style={{ display: "flex", alignItems: "center", justifyContent: "center", height: "60vh", flexDirection: "column" }}>
-            <h1>Blog Form</h1>
-            <form style={{ display: "flex", flexDirection: "column", gap: "10px" }} onSubmit={handleSubmit}>
-                <input required onChange={(e) => settitle(e.target.value)} placeholder="Title of Blog" type="text"></input>
-                <input required onChange={(e) => setsubtitle(e.target.value)} placeholder="Sub Title of Blog" type="text"></input>
-                <label>Display Picture for Blog {img && <span style={{ color: "darkgreen", fontWeight: "bold" }}>{imgPerc}%</span>}</label>
-                <input required onChange={(e) => setimg(e.target.files[0])} type="file"></input>
-                <input required onChange={(e) => setname(e.target.value)} placeholder="Your Name" type="text"></input>
-                <input required onChange={(e) => setemail(e.target.value)} placeholder="Your Correct Email" type="email"></input>
-                <button type="submit">Submit</button>
-            </form>
+        <div className="container my-5">
+            <div className="row justify-content-center ">
+                <div className="col-md-6 border-solid shade border-black">
+                    <h1 className="text-center h1seo mt-3">Blog Form</h1>
+                    <form onSubmit={handleSubmit}>
+                        <div className="mb-3">
+                            <label htmlFor="blogTitle" className="form-label">
+                                Title of Blog
+                            </label>
+                            <input
+                                required
+                                onChange={(e) => settitle(e.target.value)}
+                                className="form-control"
+                                id="blogTitle"
+                                type="text"
+                                placeholder="Title of Blog"
+                            ></input>
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="blogSubtitle" className="form-label">
+                                Subtitle of Blog
+                            </label>
+                            <input
+                                required
+                                onChange={(e) => setsubtitle(e.target.value)}
+                                className="form-control"
+                                id="blogSubtitle"
+                                type="text"
+                                placeholder="Subtitle of Blog"
+                            ></input>
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="blogImage" className="form-label">
+                                Display Picture for Blog {img && <span style={{ color: "darkgreen", fontWeight: "bold" }}>{imgPerc}%</span>}
+                            </label>
+                            <input
+                                required
+                                onChange={(e) => setimg(e.target.files[0])}
+                                className="form-control"
+                                id="blogImage"
+                                type="file"
+                            ></input>
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="yourName" className="form-label">
+                                Your Name
+                            </label>
+                            <input
+                                required
+                                onChange={(e) => setname(e.target.value)}
+                                className="form-control"
+                                id="yourName"
+                                type="text"
+                                placeholder="Your Name"
+                                
+                            ></input>
+                        </div>
+                        <div className="mb-3">
+                            <label htmlFor="yourEmail" className="form-label">
+                                Your Correct Email
+                            </label>
+                            <input
+                                required
+                                onChange={(e) => setemail(e.target.value)}
+                                className="form-control"
+                                id="yourEmail"
+                                type="email"
+                                placeholder="Your Correct Email"
+                            ></input>
+                        </div>
+                        <button type="submit " className="btn myButton testBtn my-3">
+                            <h6 className="mb-0 pb-0">Submit</h6>
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
         </div>
+
     )
 }

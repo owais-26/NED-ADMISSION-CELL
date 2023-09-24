@@ -132,36 +132,40 @@ export default function Blogs() {
                         {isLoading ? (
                             <Loader />
                         ) : (
-                            sortedBlogs.map((item, index) => (
-                                <div class="mx-5 my-5">
-                                    <div class="row">
-                                        <div class="col-md-9">
+                            
+                                    <div className="mx-5 my-5">
+                                        <div className="row">
+                                            {/* Blogs Column */}
+                                            <div className="col-lg-9 col-md-12">
+                                                <div className="row">
+                                                    {sortedBlogs.map((item, index) => (
+                                                        <div key={index} className="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                                                            <Link to={`/blogs/${item.title}`}>
+                                                                <BlogItems
+                                                                    title={item.title}
+                                                                    image={item.imgUrl}
+                                                                    authorname={item.authorname}
+                                                                    index={index}
+                                                                />
+                                                            </Link>
+                                                        </div>
+                                                    ))}
+                                                </div>
+                                            </div>
 
-                                            <div key={index}  className="col-lg-6  col-sm-12" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out-sine">
-                                                <Link>
-                                                    <BlogItems
-                                                        title={item.title}
-                                                        image={item.imgUrl}
-                                                        authorname={item.authorname}
-                                                        index={index}
-                                                    />
-                                                </Link>
+                                            {/* Start Blog Column */}
+                                            <div className="col-lg-3 col-md-12 rounded py-5 text border bg-white border-gray-400">
+                                                <h5 className='text-left' style={{ color: 'black' }}>Are you considering the idea of writing a blog? Why not take advantage of our platform to share your creativity with thousands of aspiring individuals?</h5>
+                                                <div className='text-center mt-4'>
+                                                    <Link to='/addblog'>
+                                                        <button className="myButton testBtn"><h6 className='mb-0 pb-0'>Start your Blog Now!</h6></button>
+                                                    </Link>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="col-md-3 py-5 text border bg-white  border-gray-400">
-                                           
-                                             <h5 className='text-left ' style={{ color: 'black' }}>Are you considering the idea of writing a blog? Why not take advantage of our platform to share your creativity with thousands of aspiring individuals?</h5> 
-
-                                             <div className='text-center'>
-                                              <Link to='/addblog'> 
-                                                    <button className="myButton testBtn "><h6 className='mb-0 pb-0'>Start your Blog Now!</h6></button>
-                                              </Link>  
-                                             </div>
-                                        </div>
                                     </div>
-                                </div>
 
-                            ))
+                           
                         )}
                     </div>
                 </>

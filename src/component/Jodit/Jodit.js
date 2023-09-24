@@ -124,7 +124,7 @@ const JoditEditor = () => {
     }
     const handleSubmit = async () => {
         if (!context.data.title && !context.data.authorname && !context.data.authoremail && !context.data.imgUrl) {
-            navigate("/addblogs")
+            navigate("/addblog")
         }
         else{
             await Req.post("/blog/pendBlog", { title, imgUrl, authorname, authoremail, content })
@@ -139,8 +139,49 @@ const JoditEditor = () => {
     }
     return (
         <>
+            <div className='container'>
+                <h1 data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' className="mt-3 h1seo text-center">
+                    {" "}
+                    &nbsp; &nbsp;
+                    <i className="fa-sharp fa-solid fa-pencil me-1"></i>{" "}
+                    Blog Editor&nbsp;&nbsp;&nbsp;&nbsp;
+                </h1>
+                <div
+                    data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
+
+                    className="  text-decoration-underline mb-4 mx-auto"
+                ></div>
+                <h3>Ready to Write Your First Blog? Learn the Top 5 Rules</h3>
+               
+                <ol>
+                    <li>Understand Your Audience: Get to know your target audience and create content that speaks to their interests and needs.</li>
+                    <li>Captivating Titles: Craft compelling headlines that clearly convey your blog's topic and captivate your readers.</li>
+                    <li>High-Quality Content: Offer valuable, well-researched, and informative content that provides solutions or insights to your readers.</li>
+                    <li>Structured Posts: Organize your blog posts logically, using headings, subheadings, and bullet points to enhance readability.</li>
+                    <li>Engage Your Audience: Encourage reader engagement through effective use of visuals, calls-to-action (CTAs), and responsive interactions with comments.</li>
+                </ol>
+                <h4>Key Criteria for Blog Approval</h4>
+                <p className='text-danger'>Your blog submission must meet the following criteria to be approved:</p>
+                <ol>
+                    <li>Word Count Requirement: Ensure your blog contains a minimum of 500 words.</li>
+                    <li>Originality and Plagiarism: Your content must not exceed a 20% plagiarism index, and it should be genuinely created without AI-generated text.</li>
+                    <li>Heading and Subheading Inclusion: Organize your blog with appropriate headings and subheadings for structure and clarity.</li>
+                    <li>Visual Content: Enhance your blog with relevant visuals, such as images or graphics, to improve engagement and comprehension.</li>
+                </ol>
+                <p className='text-danger'>Kindly be aware that the editor below will display your blog exactly as it appears on the website. Therefore, please make an effort to enhance its quality to the best of your ability.</p>
+               
+            </div>
+        <div className='container mt-5'>
+
             <JoditReact config={editorConfig} onChange={(e) => Output(e)} />
-            <button onClick={handleSubmit} style={{ marginTop: "50px" }}>Submit</button>
+        </div>
+            <div className='text-center'>
+                <button onClick={handleSubmit} className="myButton mb-5 btnTest" style={{ marginTop: "30px",
+                width: "10rem"
+            }}>Submit</button>
+            </div>
+           
+
         </>
     );
 };

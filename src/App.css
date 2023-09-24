@@ -312,7 +312,7 @@ background: linear-gradient(298deg, rgba(11,24,83,1) 0%, rgba(30,12,96,1) 100%);
   color: white !important;
 }
 body {
-  background-color: rgba(247, 241, 241, 0.829) ;
+  background-color: rgb(255, 255, 255) !important;
 }
 
 .container1 {
@@ -604,6 +604,11 @@ h6 {
 }
 a{
   color: rgb(3, 0, 201);
+}
+li{
+  color: black;
+   font-family: "Poppins", sans-serif !important;
+   font-size: medium;
 }
 .text-congrats{
   color: #00ff00 !important;
