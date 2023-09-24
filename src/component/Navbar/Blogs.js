@@ -1,13 +1,15 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { useEffect, useState } from 'react';
+import { useEffect, useState,    } from 'react';
 import { Helmet, HelmetProvider } from "react-helmet-async";
 import Loader from "./Loader";
 import Req from '../../Url';
 import Defaultnews from './Defaultnews';
 import BlogItems from './blogitems';
+import Typed from 'typed.js';
 
 export default function Blogs() {
+    const el = React.useRef(null);
     const [isLoading, setIsLoading] = useState(true);
     const [blogs, setblogs] = useState();
     useEffect(() => {
@@ -28,8 +30,15 @@ export default function Blogs() {
         };
         getBlogs();
         console.log(blogs)
+       
+    }, []);
+    // var typed6 = new Typed('#typed6', {
+    //     strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
+    //     typeSpeed: 40,
+    //     backSpeed: 0,
+    //     loop: true
+    // });
 
-    }, [blogs]);
     const sortedBlogs =
         blogs && blogs.sort((a, b) => new Date(b.createdAt) - new Date(a.createdAt));
     return (
@@ -124,11 +133,11 @@ export default function Blogs() {
                             <Loader />
                         ) : (
                             sortedBlogs.map((item, index) => (
-                                <div class="container">
+                                <div class="mx-5 my-5">
                                     <div class="row">
                                         <div class="col-md-9">
 
-                                            <div key={index} data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'>
+                                            <div key={index}  className="col-lg-6  col-sm-12" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out-sine">
                                                 <Link>
                                                     <BlogItems
                                                         title={item.title}
@@ -140,10 +149,14 @@ export default function Blogs() {
                                             </div>
                                         </div>
                                         <div class="col-md-3 py-5 text border bg-white  border-gray-400">
-                                            <h5 style={{
-                                                color: 'black' 
-                                            }}>Have you ever contemplated the idea of becoming a blogger? If so, here's a fantastic opportunity to utilize our platform to spread your creativity to thousands of aspiring individuals.
-                                            </h5>
+                                           
+                                             <h5 className='text-left ' style={{ color: 'black' }}>Are you considering the idea of writing a blog? Why not take advantage of our platform to share your creativity with thousands of aspiring individuals?</h5> 
+
+                                             <div className='text-center'>
+                                              <Link to='/addblog'> 
+                                                    <button className="myButton testBtn "><h6 className='mb-0 pb-0'>Start your Blog Now!</h6></button>
+                                              </Link>  
+                                             </div>
                                         </div>
                                     </div>
                                 </div>

@@ -15,7 +15,7 @@ const BlogItems = (props) => {
     }
 
     return (
-        <section className="card container  animate__animated  animate__fadeInDown newsCard shade mb-5 rounded mb-3 ">
+        <section className="card hoverBlog  container  animate__animated  animate__fadeInDown newsCard shade mb-5 rounded mb-3 ">
             {badge}
 
             <div className="row g-0">
@@ -29,7 +29,7 @@ const BlogItems = (props) => {
                         />
                     </div>
                 )}
-                <div className="col-md-8">
+                <div className="col-md-8 ">
                     <div className="card-body">
                         {visibleProps.includes("title") && (
                             <h5 className="card-title ">{props.title}</h5>
