@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from "react";
 import axios from "axios";
 const Req = axios.create({
-  baseURL: `https://tired-crow-leather-jacket.cyclic.app/api`,
+  baseURL: `http://localhost:8800/api`,
 });
 export default Req;

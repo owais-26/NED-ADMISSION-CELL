@@ -83,7 +83,7 @@ export default function Blog1() {
                     <h2>Senior's Advice</h2>
                     <p className='text-left sm:text-left'>As responsible senior of BCIT, consider this advice from us. Your future will involve hours of coding and debugging on your laptop or PC. In university, self-study is crucial. No one will spoon-feed you as you might be accustomed to in high school. Professors will provide the basic concepts, but it will be your responsibility to solidify your understanding.</p>
 
-                    <p className='text-left sm:text-left'>It's worth noting that even in fields like electronics, electrical, and telecommunications, there are one or two programming courses (check the course outline in the prospectus). So, this advice applies to all incoming juniors.</p>
+                    <p className='text-left sm:text-left'>It's worth noting that even in fields like electronics, electrical, and telecommunications, there are one or two programming courses (check the course outline in the prospectus). So, this advice applies to all upcoming juniors.</p>
                 </section>
                     <footer className=" text-white text-center py-3">
                         <p className='text-left sm:text-left'>Feel free to ask any questions on this topic. Your journey has just begun, and with dedication, you'll excel. Contact me at <a href="mailto:owais.ansaricr7@gmail.com">@owaisansari</a></p>

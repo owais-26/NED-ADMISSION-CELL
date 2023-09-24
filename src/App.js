@@ -15,6 +15,9 @@ import WhatsApp from "./component/Navbar/WhatsApp";
 import Blogs from "./component/Navbar/Blogs";
 import Blog1 from "./component/Navbar/Blog1";
 
+import Editor from "./component/Navbar/Editor";
+import AddBlogs from "./component/Navbar/AddBlogs";
+
 
 
 
@@ -54,6 +57,12 @@ function App() {
             {" "}
           </Route>
           <Route  path="/blogs" element={<Blogs />}>
+            {" "}
+          </Route>
+          <Route  path="/addblogs" element={<AddBlogs/>}>
+            {" "}
+          </Route>
+          <Route  path="/editor" element={<Editor />}>
             {" "}
           </Route>
           <Route path="/blogs/gaining-edge-with-programming-languages" element={<Blog1/>} >
