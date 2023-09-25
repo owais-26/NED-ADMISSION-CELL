@@ -139,7 +139,7 @@ export default function Blogs() {
                                             <div className="col-lg-9 col-md-12">
                                                 <div className="row">
                                                     {sortedBlogs.map((item, index) => (
-                                                        <div key={index} className="col-lg-6 col-md-12" data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out-sine">
+                                                        <div key={index} data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out-sine">
                                                             <Link to={`/blogs/${item.title}`}>
                                                                 <BlogItems
                                                                     title={item.title}

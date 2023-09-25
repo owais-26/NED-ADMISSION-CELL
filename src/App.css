@@ -595,12 +595,7 @@ h6 {
   background-color: #9faef383;
 }
 .bgimage{
-   background-image: url('../public/blogimg.jpg');
-    
-    background-size: cover;
-  
-    background-position: center center;
-    background-color: rgba(255, 255, 255, 0.5);
+   background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1137%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='%230e2a47'%3e%3c/rect%3e%3cpath d='M942.88 202.18 a181.06 181.06 0 1 0 362.12 0 a181.06 181.06 0 1 0 -362.12 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M69.61 54.59 a105.52 105.52 0 1 0 211.04 0 a105.52 105.52 0 1 0 -211.04 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M149.23 418.7 a170.67 170.67 0 1 0 341.34 0 a170.67 170.67 0 1 0 -341.34 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M1331.44 60.63 a103.61 103.61 0 1 0 207.22 0 a103.61 103.61 0 1 0 -207.22 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M39.56 241.61 a142.86 142.86 0 1 0 285.72 0 a142.86 142.86 0 1 0 -285.72 0z' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M444.806%2c757.773C499.352%2c756.144%2c537.017%2c709.743%2c564.08%2c662.357C590.852%2c615.479%2c609.473%2c560.687%2c584.782%2c512.68C558.255%2c461.103%2c502.804%2c430.786%2c444.806%2c430.451C386.224%2c430.113%2c330.335%2c459.772%2c302.003%2c511.048C274.502%2c560.822%2c284.034%2c620.653%2c312.52%2c669.87C340.945%2c718.981%2c388.087%2c759.467%2c444.806%2c757.773' fill='rgba(28%2c 83%2c 142%2c 0.4)' class='triangle-float2'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1137'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
 }
 a{
   color: rgb(3, 0, 201);
@@ -611,5 +606,45 @@ li{
    font-size: medium;
 }
 .text-congrats{
-  color: #00ff00 !important;
+  color: #ffffff !important;
+  height: 150px;
+}
+form {
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+label {
+  display: block;
+  /* margin-bottom: 5px; */
+  margin-bottom: 0;
+}
+
+input[type="text"], input[type="number"], input[type="date"] {
+  width: 100%;
+  padding: 12px 20px; 
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+}
+
+input[type="submit"] {
+  width: 100%;
+  background-color: #24057a;
+  color: white;
+  padding: 14px 20px;
+  margin-bottom: 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: #0b0144;
 }

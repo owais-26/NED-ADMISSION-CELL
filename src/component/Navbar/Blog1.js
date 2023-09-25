@@ -57,7 +57,7 @@ export default function Blog1() {
                 {/* <h4 className=" italic text-center px-2 text-white">Your hard work has paid off, and you're on your way to success.</h4> */}
             </header>
             {Loading ? <Loader /> : <>
-                <div data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' className="container text-left sm:text-left col-md-6 mt-5">
+                <div  className="container text-left sm:text-left col-md-6 mt-5">
                     {blog && parse(html)}
                     
                     <div className="container mt-3">

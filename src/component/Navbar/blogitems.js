@@ -15,63 +15,66 @@ const BlogItems = (props) => {
     }
 
     return (
-        // <section className="card hoverBlog  container  animate__animated  animate__fadeInDown newsCard shade mb-5 rounded mb-3 ">
-        //     {badge}
+        <>
+          
 
-        //     <div className="row g-0">
-        //         {visibleProps.includes("imgUrl") && (
-        //             <div className="col-md-4 newspic">
-        //                 <img
-        //                     loading="lazy"
-        //                     src={props.image}
-        //                     className="img-fluid rounded-start"
-        //                     alt="News"
-        //                 />
-        //             </div>
-        //         )}
-        //         <div className="col-md-8 ">
-        //             <div className="card-body">
-                      
-        //                 {/* {visibleProps.includes("description") && (
-        //                     <p className="card-text text-justify">{props.description}</p>
-        //                 )} */}
-
-                        
-
-                      
-        //             </div>
-        //             {visibleProps.includes("authorname") && (
-        //                 <p
-
-        //                     className=" text-primary text-end"
-        //                 >
-        //                     Published By : {props.authorname}
-        //                 </p>
-        //             )}
-        //         </div>
-        //     </div>
-        // </section>
-        <div class="card card hoverBlog  container  animate__animated  animate__fadeInDown newsCard shade mb-5 rounded mb-3" >
-            {badge}
-            {visibleProps.includes("imgUrl") && (
-                <img  src={props.image} class=" h-full w-full  img-fluid card-img card-imagePast" alt="..."/>
-            )}
-                <div class="card-body">
-                {visibleProps.includes("title") && (
-                    <h5 className="card-title ">{props.title}</h5>
-                )}
-                    {/* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
-
-                {visibleProps.includes("authorname") && (
-                            <p
-
-                                className=" text-primary text-end"
-                            >
-                                Published By : {props.authorname}
-                            </p>
-                        )}
+            <div className="card mb-3 shadow-sm hoverBlog">
+                {badge}
+                <div className="row g-0">
+                    {visibleProps.includes("imgUrl") && (
+                        <div className="col-md-4">
+                            <img
+                                loading="lazy"
+                                src={props.image}
+                                className="img-fluid rounded-start"
+                                alt="News"
+                            />
+                        </div>
+                    )}
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            {visibleProps.includes("description") && (
+                                <h5 className="card-title">{props.title}</h5>
+                            )}
+                            {visibleProps.includes("description") && (
+                                <p className="card-text">{props.description}</p>
+                            )}
+                            {visibleProps.includes("authorname") && (
+                                <p className="card-text text-muted">
+                                    Published By: {props.authorname}
+                                </p>
+                            )}
+                        </div>
+                    </div>
                 </div>
-        </div>
+            </div>
+
+        </>
+    
+          
+ 
+
+        // <div class="card card hoverBlog  container  animate__animated  animate__fadeInDown newsCard shade mb-5 rounded mb-3" >
+        //     {badge}
+        //     {visibleProps.includes("imgUrl") && (
+        //         <img  src={props.image} class=" h-full w-full  img-fluid card-img card-imagePast" alt="..."/>
+        //     )}
+        //         <div class="card-body">
+        //         {visibleProps.includes("title") && (
+        //             <h5 className="card-title ">{props.title}</h5>
+        //         )}
+        //             {/* <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p> */}
+
+        //         {visibleProps.includes("authorname") && (
+        //                     <p
+
+        //                         className=" text-primary text-end"
+        //                     >
+        //                         Published By : {props.authorname}
+        //                     </p>
+        //                 )}
+        //         </div>
+        // </div>
     );
 };
 

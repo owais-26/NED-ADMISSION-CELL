@@ -56,10 +56,10 @@ export default function AddBlogs() {
     }
     return (
         <div className="container my-5">
-            <div className="row justify-content-center ">
-                <div className="col-md-6 border-solid shade border-black">
-                    <h1 className="text-center h1seo mt-3">Blog Form</h1>
-                    <form onSubmit={handleSubmit}>
+            {/* <div className="row justify-content-center ">
+                <div className="col-md-6 border-solid shade border-black"> */}
+            <h1 className="text-center h1seo mt-3">Blog Form</h1>
+            {/* <form onSubmit={handleSubmit}>
                         <div className="mb-3">
                             <label htmlFor="blogTitle" className="form-label">
                                 Title of Blog
@@ -128,11 +128,64 @@ export default function AddBlogs() {
                         <button type="submit " className="btn myButton testBtn my-3">
                             <h6 className="mb-0 pb-0">Submit</h6>
                         </button>
-                    </form>
-                    
-                </div>
-            </div>
+                    </form> */}
+
+            <form onSubmit={handleSubmit}>
+                <label htmlFor="blogTitle" for="item">Title of Blog:</label><br />
+                <input
+                    required
+                    onChange={(e) => settitle(e.target.value)}
+                    className=""
+                    id="blogTitle"
+                    type="text"
+                    placeholder="Title of Blog"
+                ></input><br />
+               
+                <label for="quantity">Subtitle of Blog:</label><br />
+                <input
+                    required
+                    onChange={(e) => setsubtitle(e.target.value)}
+                    className="form-control"
+                    id="blogSubtitle"
+                    type="text"
+                    placeholder="Subtitle of Blog"
+                ></input><br />
+                <label htmlFor="blogImage" className="form-label">
+                    Display Picture for Blog {img && <span style={{ color: "darkgreen", fontWeight: "bold" }}>{imgPerc}%</span>}
+                </label><br />
+                <input
+                    required
+                    onChange={(e) => setimg(e.target.files[0])}
+                    className="form-control"
+                    id="blogImage"
+                    type="file"
+                ></input><br />
+                <label for="uid">Author Name</label><br />
+                <input
+                    required
+                    onChange={(e) => setname(e.target.value)}
+                    className="form-control"
+                    id="yourName"
+                    type="text"
+                    placeholder="Your Name"
+
+                ></input><br />
+                <label for="uid">Your Email</label><br />
+                <input
+                    required
+                    onChange={(e) => setname(e.target.value)}
+                    className="form-control"
+                    id="yourName"
+                    type="text"
+                    placeholder="Your Name"
+
+                ></input><br />
+              
+                <input type="submit" value="Submit" />
+            </form>
         </div>
+        //     </div>
+        // </div>
 
     )
 }
