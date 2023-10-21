@@ -173,7 +173,7 @@ export default function AddBlogs() {
                 <label for="uid">Your Email</label><br />
                 <input
                     required
-                    onChange={(e) => setname(e.target.value)}
+                    onChange={(e) => setemail(e.target.value)}
                     className="form-control"
                     id="yourName"
                     type="text"

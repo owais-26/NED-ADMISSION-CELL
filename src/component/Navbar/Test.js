@@ -14,7 +14,6 @@ const Test = (props) => {
     const [activeComp, setActiveComp] = useState('mock');
     useEffect(() => {
       document.title = "Tests | Ned Admission Cell";
-      // setIsLoading(false);  
        setTimeout(() => {
          setIsLoading(false);
        }, 1000);
@@ -28,8 +27,9 @@ const Test = (props) => {
        };
        getTest();
     }, []);
-    // console.log(Test&&Test[0].mock)
-
+    function getTestByType(type) {
+      return Test && Test.filter((item) => item.type === type);
+    }
     return (
       <>
         <HelmetProvider>
@@ -142,10 +142,10 @@ const Test = (props) => {
                 <h5>Chemistry</h5>
               </div>
             </div>
-            {activeComp === "mock" && <Mock />}
-            {activeComp === "chemistry" && <ChemComp />}
-            {activeComp === "physics" && <PhyComp />}
-            {activeComp === "maths" && <MathComp />}
+            {activeComp === "mock" && <Mock getTestByType={getTestByType} />}
+            {activeComp === "chemistry" && <ChemComp getTestByType={getTestByType} />}
+            {activeComp === "physics" && <PhyComp getTestByType={getTestByType} />}
+            {activeComp === "maths" && <MathComp getTestByType={getTestByType} />}
           </div>
         )}
       </>

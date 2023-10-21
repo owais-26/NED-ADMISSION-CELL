@@ -12,10 +12,12 @@ const JoditEditor = () => {
     const navigate = useNavigate()
     let content;
     const title = context.data.blogtitle
+    const subtitle = context.data.blogsubtitle
     const imgUrl = context.data.coverimg
     const authorname = context.data.authorname
     const authoremail = context.data.authoremail
-    console.log({ title, imgUrl, authorname, authoremail })
+    
+    console.log({ title, imgUrl, authorname, authoremail ,subtitle})
     const editorConfig = {
         readonly: false,
         toolbar: true,
@@ -123,11 +125,11 @@ const JoditEditor = () => {
         content = e
     }
     const handleSubmit = async () => {
-        if (!context.data.title && !context.data.authorname && !context.data.authoremail && !context.data.imgUrl) {
+        if (!context.data.title &&  !context.data.authorname && !context.data.authoremail && !context.data.imgUrl) {
             navigate("/addblog")
         }
         else{
-            await Req.post("/blog/pendBlog", { title, imgUrl, authorname, authoremail, content })
+            await Req.post("/blog/pendBlog", { title,subtitle, imgUrl, authorname, authoremail, content })
                 .then((res) => {
                     if (res.status === 200) {
                         alert("Blog Created")
@@ -171,7 +173,7 @@ const JoditEditor = () => {
                 <p className='text-danger'>Kindly be aware that the editor below will display your blog exactly as it appears on the website. Therefore, please make an effort to enhance its quality to the best of your ability.</p>
                
             </div>
-        <div className='container mt-5'>
+        <div className='mx-5 mt-5'>
 
             <JoditReact config={editorConfig} onChange={(e) => Output(e)} />
         </div>

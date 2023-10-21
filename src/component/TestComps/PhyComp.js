@@ -6,7 +6,7 @@ import Req from "../../Url";
 import { useEffect, useState } from "react";
 import Loader from '../Navbar/Loader';
 // import Req from "../../Url";
-const PhyComp = () => {
+const PhyComp = ({getTestByType}) => {
    const [Test, setTest] = useState();
     const [isLoading, setIsLoading] = useState(true);
    useEffect(() => {
@@ -30,8 +30,8 @@ const PhyComp = () => {
           {isLoading ? (
             <Loader />
           ) : (
-            Test &&
-            Test[0].physics.map((item, index) => {
+            
+            getTestByType("physics").map((item, index) => {
               return (
                 <TestItem
                   className="testitem"

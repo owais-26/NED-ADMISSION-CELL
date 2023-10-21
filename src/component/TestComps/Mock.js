@@ -6,7 +6,7 @@ import Req from "../../Url";
 import Loader from '../Navbar/Loader';
 
 
-const Mock = () => {
+const Mock = ({getTestByType}) => {
   const [Test, setTest] = useState();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -30,8 +30,7 @@ const Mock = () => {
         {isLoading ? (
           <Loader/>
         ) : (
-          Test &&
-          Test[0].mock.map((item, index) => {
+          getTestByType("mock").map((item, index) => {
             return (
               <TestItem
                 className="testitem"

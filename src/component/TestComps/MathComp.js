@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import Req from "../../Url";
 import Loader from "../Navbar/Loader";
 
-const MathComp = () => {
+const MathComp = ({getTestByType}) => {
   const [Test, setTest] = useState();
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
@@ -34,8 +34,8 @@ const MathComp = () => {
       {isLoading ? (
         <Loader />
       ) : (
-        Test &&
-        Test[0].math.map((item, index) => {
+        
+        getTestByType("math").map((item, index) => {
           return (
             <TestItem
               className="testitem"

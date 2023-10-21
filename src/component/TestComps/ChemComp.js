@@ -5,22 +5,13 @@ import { useEffect } from 'react';
 import Req from '../../Url'
 import Loader from '../Navbar/Loader';
 
-const ChemComp = () => {
+const ChemComp = ({getTestByType}) => {
   const [Test, setTest] = useState();
    const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     document.title = "Tests | Ned Admission Cell";
-    const getTest = async () => {
-      await Req.get(`/test/gettest`).then((response) => {
-        if (response.status === 200) {
-          setTest(response.data);
-          setIsLoading(false);  
-        }
-      });
-    };
-    getTest();
+    setIsLoading(false)
   }, []);
-  // console.log(Test)
     return (
       <>
         <div id="physics " className="mb-5">
@@ -30,8 +21,7 @@ const ChemComp = () => {
           {isLoading ? (
             <Loader />
           ) : (
-            Test &&
-            Test[0].chemistry.map((item, index) => {
+            getTestByType("chemistry").map((item, index) => {
               return (
                 <TestItem
                   className="testitem"
