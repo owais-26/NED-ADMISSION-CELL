@@ -143,7 +143,7 @@ export default function AddBlogs() {
                
                 <label for="quantity">Subtitle of Blog:</label><br />
                 <input
-                    required
+                    
                     onChange={(e) => setsubtitle(e.target.value)}
                     className="form-control"
                     id="blogSubtitle"
@@ -167,7 +167,7 @@ export default function AddBlogs() {
                     className="form-control"
                     id="yourName"
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="John Doe"
 
                 ></input><br />
                 <label for="uid">Your Email</label><br />
@@ -177,7 +177,8 @@ export default function AddBlogs() {
                     className="form-control"
                     id="yourName"
                     type="text"
-                    placeholder="Your Name"
+                    placeholder="johndoe@xyz.com"
+                    pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$"
 
                 ></input><br />
               

@@ -2,7 +2,16 @@ import React from "react";
 
 
 const BlogItems = (props) => {
-    const visibleProps = ["imgUrl", "title", "authorname"];
+    const visibleProps = ["imgUrl", "title", "authorname", "createdAt","subtitle"];
+    function formatDate(dateString) {
+        const options = { year: 'numeric', month: 'short', day: '2-digit' };
+        const formattedDate = new Date(dateString).toLocaleDateString('en-US', options);
+        return formattedDate;
+    }
+
+    // Example usage:
+    const originalDate = props.createdAt; // Replace with your props.createdAt
+    const formattedDate = formatDate(originalDate);
 
     let badge;
     if (props.index < 3) {
@@ -33,15 +42,20 @@ const BlogItems = (props) => {
                     )}
                     <div className="col-md-8">
                         <div className="card-body">
-                            {visibleProps.includes("description") && (
+                            {visibleProps.includes("title") && (
                                 <h5 className="card-title">{props.title}</h5>
                             )}
-                            {visibleProps.includes("description") && (
-                                <p className="card-text">{props.description}</p>
+                            {visibleProps.includes("subtitle") && (
+                                <p className="card-text">{props.subtitle}</p>
                             )}
                             {visibleProps.includes("authorname") && (
-                                <p className="card-text text-muted">
+                                <p className="card-text text-primary">
                                     Published By: {props.authorname}
+                                </p>
+                            )}
+                            {visibleProps.includes("createdAt") && (
+                                <p className="card-text text-muted">
+                                    {formattedDate}
                                 </p>
                             )}
                         </div>

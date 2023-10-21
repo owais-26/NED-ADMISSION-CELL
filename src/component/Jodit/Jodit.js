@@ -5,7 +5,7 @@ import { getStorage, ref, uploadBytesResumable, getDownloadURL } from "firebase/
 import app from './Firebase';
 import axios from 'axios'
 import { DataContext } from './Context';
-import { useNavigate } from 'react-router-dom';
+import { Router, useNavigate } from 'react-router-dom';
 import Req from '../../Url';
 const JoditEditor = () => {
     const context = useContext(DataContext)
@@ -52,6 +52,19 @@ const JoditEditor = () => {
     useEffect(() => {
         uploadImageButton();
         codeBlockButton();
+        const handleBeforeUnload = (e) => {
+            // Display a confirmation message when the user tries to refresh
+            e.preventDefault();
+            e.returnValue = '';
+        };
+        
+        window.addEventListener('beforeunload', handleBeforeUnload);
+        return () => {
+            // Cleanup: Remove the event listener when the component unmounts
+            window.removeEventListener('beforeunload', handleBeforeUnload);
+           
+            
+        };
     }, []);
 
     const uploadImageButton = () => {
@@ -76,7 +89,7 @@ const JoditEditor = () => {
             },
         };
     };
-
+    const isMobile = window.innerWidth <= 768;
     const imageUpload = (editor) => {
         const input = document.createElement('input');
         input.setAttribute('type', 'file');
@@ -133,7 +146,7 @@ const JoditEditor = () => {
                 .then((res) => {
                     if (res.status === 200) {
                         alert("Blog Created")
-                        navigate("/")
+                        navigate("/blogs")
                     }
                 })
         }
@@ -173,12 +186,15 @@ const JoditEditor = () => {
                 <p className='text-danger'>Kindly be aware that the editor below will display your blog exactly as it appears on the website. Therefore, please make an effort to enhance its quality to the best of your ability.</p>
                
             </div>
-        <div className='mx-5 mt-5'>
-
-            <JoditReact config={editorConfig} onChange={(e) => Output(e)} />
-        </div>
-            <div className='text-center'>
-                <button onClick={handleSubmit} className="myButton mb-5 btnTest" style={{ marginTop: "30px",
+            <div className='mx-5 mt-5'>
+             
+                    <h4 className='text-danger text-center show-on-mobile'>Oops... You cannot post your blog from a mobile device. Use Laptop/Desktop for better experience</h4>
+               
+                    <JoditReact config={editorConfig} onChange={(e) => Output(e)} className='hide-on-mobile' />
+            
+            </div>
+            <div className='text-center hide-on-mobile'>
+                <button onClick={handleSubmit} className="myButton mb-5 btnTest  " style={{ marginTop: "30px",
                 width: "10rem"
             }}>Submit</button>
             </div>

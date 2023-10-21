@@ -54,7 +54,7 @@ export default function Blog1() {
         <>
             <header className="bgimage  text-center py-5">
                 <h1 className='text-congrats h1seo'>{blog?.title}!</h1>
-                {/* <h4 className=" italic text-center px-2 text-white">Your hard work has paid off, and you're on your way to success.</h4> */}
+                <h4 className=" text-center px-2 text-white">{blog?.subtitle}</h4>
             </header>
             {Loading ? <Loader /> : <>
                 <div  className="container text-left sm:text-left col-md-6 mt-5">

@@ -59,7 +59,7 @@ console.log(Faqs)
               className="  text-decoration-underline mb-4 mx-auto"
             ></div>
           </div>
-          <div data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' className="searchBox text-center mb-5 ">
+          <div data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' className="searchBox container col-lg-6 text-center mb-5 ">
             <input
               className="search_input "
               type="text"

@@ -7,6 +7,7 @@ import Req from '../../Url';
 import Defaultnews from './Defaultnews';
 import BlogItems from './blogitems';
 import Typed from 'typed.js';
+import DefaultBlog from './DefaultBlog';
 
 export default function Blogs() {
     const el = React.useRef(null);
@@ -109,8 +110,8 @@ export default function Blogs() {
                 </Helmet>
             </HelmetProvider>
 
-            {blogs && blogs.length === 0 ? (
-                <Defaultnews />
+            {blogs && blogs.length === 0  ? (
+                <DefaultBlog/>
             ) : (
                 <>
 
@@ -145,6 +146,8 @@ export default function Blogs() {
                                                                     title={item.title}
                                                                     image={item.imgUrl}
                                                                     authorname={item.authorname}
+                                                                    createdAt={item.createdAt}
+                                                                    subtitle={item.subtitle}
                                                                     index={index}
                                                                 />
                                                             </Link>
