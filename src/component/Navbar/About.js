@@ -11,7 +11,9 @@ const About = () => {
   const handleToggle = () => setShowMore(!showMore);
   return (
     <>
-      <section className="mission   ">
+    
+      
+      <section className="mission container  ">
         <div>
           <div data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine' className=" ">
             <div className="  text-center">
@@ -28,84 +30,30 @@ const About = () => {
             </div>
             <p
               data-aos="fade-up" data-aos-duration="600" data-aos-easing='ease-out-sine'
-              className="text-justify px-5 hashim1 rounded-lg hashimpara py-4   para "
+              className="text-justify text-center px-5 hashim1 rounded-lg hashimpara py-4 para"
             >
-              Our website provides a comprehensive range of resources to assist
-              students with their university admission process. We offer the
-              latest{" "}
-              <b>
-                {" "}
-                <a
-                  className="text-white"
-                  href="https://nedadmissioncell.com/news"
-                >
-                  News
-                </a>{" "}
-              </b>{" "}
-              regarding admission requirements and deadlines, as well as{" "}
-              <a
-                className="text-white"
-                href="https://nedadmissioncell.com/guidelines"
-              >
-                <b>Guidelines</b>
-              </a>{" "}
-              on how to prepare for the entry tests. Our platform features{" "}
-              <b>
-                {" "}
-                <a
-                  className="text-white"
-                  href="https://nedadmissioncell.com/pastpaper"
-                >
-                  Past Papers
-                </a>{" "}
-                and{" "}
-                <a
-                  className="text-white"
-                  href="https://nedadmissioncell.com/faqs"
-                >
-                  Frequently Asked Questions (FAQs)
-                </a>
-              </b>{" "}
-              to help students familiarize themselves with the{" "}
-              <a
-                className="text-white"
-                href="https://nedadmissioncell.com/tests"
-              >
-                <b>Test</b>
-              </a>{" "}
-              format and content. In addition, we provide valuable information
-              on various{" "}
-              <b>
-                {" "}
-                <a
-                  className="text-white"
-                  href="https://nedadmissioncell.com/dept"
-                >
-                  Departments
-                </a>
-              </b>{" "}
-              to guide students towards their desired fields of study. Our team
-              is committed to supporting students through every step of the
-              admission process, including the announcement of{" "}
-              <b>
-                {" "}
-                <a
-                  className="text-white"
-                  href="https://nedadmissioncell.com/merit"
-                >
-                  Merit Lists
-                </a>{" "}
-              </b>{" "}
-              and orientation day celebrations. With our website's assistance,
-              students can increase their chances of successfully gaining
-              admission to{" "}
-              <b>
-                <a className="text-white" href="https://www.neduet.edu.pk">NED University.</a>
-              </b>
+              At NED Admission Cell, we offer a wealth of resources to aid students in their university admission journey. Our platform provides the latest{" "}
+              <a className="text-white font-extrabold" href="https://nedadmissioncell.com/news">News</a>{" "}
+              on admission requirements and deadlines, along with{" "}
+              <a className="text-white font-extrabold" href="https://nedadmissioncell.com/guidelines"><b>Guidelines</b></a>{" "}
+              for entry test preparation. You'll find{" "}
+              <a className="text-white font-extrabold" href="https://nedadmissioncell.com/pastpaper">Past Papers</a>{" "}
+              and{" "}
+              <a className="text-white font-extrabold" href="https://nedadmissioncell.com/faqs">Frequently Asked Questions (FAQs)</a>{" "}
+              to familiarize yourself with{" "}
+              <a className="text-white font-extrabold" href="https://nedadmissioncell.com/tests"><b>Test</b></a>{" "}
+              formats and content. We also offer valuable information on various{" "}
+              <a className="text-white font-extrabold" href="https://nedadmissioncell.com/dept">Departments</a>{" "}
+              to guide your field of study selection. Our dedicated team supports you through every admission step, including{" "}
+              <a className="text-white font-extrabold" href="https://nedadmissioncell.com/merit"><b>Merit Lists</b></a>{" "}
+              and orientation day celebrations. With our assistance, you can enhance your chances of securing admission to{" "}
+              <a className="text-white font-extrabold" href="https://www.neduet.edu.pk">NED University</a>.
             </p>
+
           </div>
         </div>
       </section>
+      
       <section className="text-center">
         <div className=" col-md-12 mt-5 mb-5 text-center">
           <h2 data-aos="fade-down" data-aos-duration="600" data-aos-easing='ease-out-sine' className=" ">
@@ -168,7 +116,7 @@ const About = () => {
           </div>
         </div>
       </section>
-
+      
       <section>
         <div className="text-center container ">
           <div className="row justify-content-center">
@@ -322,7 +270,7 @@ const About = () => {
                   NED ADMISSION CELL <br />{" "}
                   <p className="card-text ">
                     <small className="text-muted hashimpara ">
-                      Facebook Group - 23k+ Members
+                      Facebook Group - 30k+ Members
                     </small>
                   </p>
                 </h4>

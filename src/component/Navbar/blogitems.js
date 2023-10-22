@@ -46,15 +46,15 @@ const BlogItems = (props) => {
                                 <h5 className="card-title">{props.title}</h5>
                             )}
                             {visibleProps.includes("subtitle") && (
-                                <p className="card-text">{props.subtitle}</p>
+                                <p className="card-text font-bold text-lg">{props.subtitle}</p>
                             )}
                             {visibleProps.includes("authorname") && (
-                                <p className="card-text text-primary">
+                                <p className="card-text text-sm text-primary">
                                     Published By: {props.authorname}
                                 </p>
                             )}
                             {visibleProps.includes("createdAt") && (
-                                <p className="card-text text-muted">
+                                <p className="card-text text-sm text-muted">
                                     {formattedDate}
                                 </p>
                             )}

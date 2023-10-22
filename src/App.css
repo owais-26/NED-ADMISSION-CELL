@@ -304,7 +304,7 @@ a {
   /* color: black !important; */
 }
 .hashim1 {
- background: rgb(11,24,83);
+ background: #0b1853;
 background: linear-gradient(298deg, rgba(11,24,83,1) 0%, rgba(30,12,96,1) 100%);
 
 }
@@ -607,7 +607,7 @@ li{
 }
 .text-congrats{
   color: #ffffff !important;
-  height: 150px;
+  height: 70px;
 }
 form {
   width: 100%;
@@ -660,4 +660,13 @@ input[type="submit"]:hover {
   .show-on-mobile{
     display: block;
   }
+}
+
+  @media (max-width: 608px) {
+  .reponsiveWidth{
+    width: 350px !important;
+  }
+}
+.text-color{
+   color: #0b1853 !important; 
 }

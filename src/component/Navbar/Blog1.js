@@ -57,18 +57,15 @@ export default function Blog1() {
                 <h4 className=" text-center px-2 text-white">{blog?.subtitle}</h4>
             </header>
             {Loading ? <Loader /> : <>
-                <div style={{padding:"10px 30px 10px 30px",display:"flex",flexDirection:"column",justifyContent:"center"}}>
-                    <div className='HTML'>
+                <div className="container reponsiveWidth text-left sm:text-left col-md-6 mt-5">
                     {blog && parse(html)}
-                    </div>
-                   
-                    
+
                     <div className="container mt-3">
                         <p className="text-muted text-end">Published by: {blog?.authorname}</p>
                     </div>
                 </div>
             </>
-            }   
+}
 
         </>
     )

@@ -149,7 +149,7 @@ const JoditEditor = () => {
             await Req.post("/blog/pendBlog", { title,subtitle, imgUrl, authorname, authoremail, content })
                 .then((res) => {
                     if (res.status === 200) {
-                        alert("Blog Created")
+                        alert("Thank you for submitting your blog. It is currently awaiting admin approval. You will receive a confirmation email at the address you provided. We appreciate your patience.")
                         navigate("/blogs")
                     }
                 })
