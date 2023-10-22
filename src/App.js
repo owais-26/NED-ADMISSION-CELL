@@ -65,7 +65,7 @@ function App() {
           <Route  path="/editor" element={<Editor />}>
             {" "}
           </Route>
-          <Route path="/blogs/:title" element={<Blog1/>} >
+          <Route path="/blogs/:id/:title" element={<Blog1/>} >
 
           </Route>
           

@@ -136,7 +136,7 @@ export default function Blogs() {
                                                 <div className="row">
                                                     {sortedBlogs.map((item, index) => (
                                                         <div key={index} data-aos="fade-up" data-aos-duration="600" data-aos-easing="ease-out-sine">
-                                                            <Link to={`/blogs/${item.title}`}>
+                                                            <Link to={`/blogs/${item._id}/${item.title}`}>
                                                                 <BlogItems
                                                                     title={item.title}
                                                                     image={item.imgUrl}

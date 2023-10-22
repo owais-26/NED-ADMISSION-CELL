@@ -9,16 +9,14 @@ export default function Blog1() {
     const [blog, setblog] = useState(null)
     const [Loading, setloading] = useState(true);
     const location = useLocation()
-    // const type = location.pathname.split("/")[2]
-    // const title = location.pathname.split("/")[3]
-    const title = location.pathname.split("/")[2]
+    const id = location.pathname.split("/")[2]
+    const title = location.pathname.split("/")[3]
     var decodedString = decodeURIComponent(title);
-    console.log(decodedString)
     const getBlog = async () => {
-        await Req.get(`/blog/appBlog/${decodedString}`)
+        await Req.get(`/blog/appBlog/${id}/${decodedString}`)
             .then((res) => {
                 if (res.status === 200) {
-                    setblog(res.data[0])
+                    setblog(res.data)
                     setloading(false)
 
                     // console.log(res.data)
