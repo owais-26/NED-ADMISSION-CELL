@@ -16,8 +16,7 @@ const JoditEditor = () => {
     const imgUrl = context.data.coverimg
     const authorname = context.data.authorname
     const authoremail = context.data.authoremail
-    
-    console.log({ title, imgUrl, authorname, authoremail ,subtitle})
+    console.log({title,subtitle,imgUrl,authorname,authoremail})
     const editorConfig = {
         readonly: false,
         toolbar: true,
@@ -54,19 +53,24 @@ const JoditEditor = () => {
         codeBlockButton();
         const handleBeforeUnload = (e) => {
             // Display a confirmation message when the user tries to refresh
+          
             e.preventDefault();
-            e.returnValue = '';
+             e.returnValue = '';
         };
         
         window.addEventListener('beforeunload', handleBeforeUnload);
         return () => {
             // Cleanup: Remove the event listener when the component unmounts
-            window.removeEventListener('beforeunload', handleBeforeUnload);
+            window.removeEventListener('beforeunload', handleBeforeUnload)
            
             
         };
     }, []);
-
+    useEffect(()=>{
+        if (!title &&  !authorname && !authoremail && !imgUrl) {
+            navigate("/addblog")
+        }
+    },[title,authorname,authoremail,imgUrl])
     const uploadImageButton = () => {
         Jodit.defaultOptions.controls.uploadImage = {
             name: 'Upload image to Cloudinary',

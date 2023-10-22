@@ -15,24 +15,19 @@ export default function Blogs() {
     const [blogs, setblogs] = useState();
     useEffect(() => {
         document.title = "Blogs | NED Admission Cell";
-        setTimeout(() => {
-            setIsLoading(false);
-        }, 1000);
-        const getBlogs = async () => {
-            await Req.get(`/blog/appBlog`).then((response) => {
-                if (response.status === 200) {
-                    setblogs(response.data);
-
-                    setTimeout(() => {
-                        setIsLoading(false);
-                    }, 1000);
-                }
-            });
-        };
-        getBlogs();
-        console.log(blogs)
-       
     }, []);
+    useEffect(()=>{getBlogs()},[])
+    const getBlogs = async () => {
+        await Req.get(`/blog/appBlog`)
+        .then((response) => {
+            if (response.status === 200) {
+                setblogs(response.data)
+                setIsLoading(false)
+            }
+        }).catch((err)=>{
+            console.log(err)
+        })
+    };
     // var typed6 = new Typed('#typed6', {
     //     strings: ['npm install^1000\n `installing components...` ^1000\n `Fetching from source...`'],
     //     typeSpeed: 40,
@@ -110,7 +105,7 @@ export default function Blogs() {
                 </Helmet>
             </HelmetProvider>
 
-            {blogs && blogs.length === 0  ? (
+            {blogs && blogs.length===0 ? (
                 <DefaultBlog/>
             ) : (
                 <>

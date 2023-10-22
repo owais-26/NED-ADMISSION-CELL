@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import { useLocation } from "react-router-dom";
 import Req from '../../Url';
 import Loader from './Loader';
-
+import './blog.css'
 export default function Blog1() {
     const [blog, setblog] = useState(null)
     const [Loading, setloading] = useState(true);
@@ -57,8 +57,11 @@ export default function Blog1() {
                 <h4 className=" text-center px-2 text-white">{blog?.subtitle}</h4>
             </header>
             {Loading ? <Loader /> : <>
-                <div  className="container text-left sm:text-left col-md-6 mt-5">
+                <div style={{padding:"10px 30px 10px 30px",display:"flex",flexDirection:"column",justifyContent:"center"}}>
+                    <div className='HTML'>
                     {blog && parse(html)}
+                    </div>
+                   
                     
                     <div className="container mt-3">
                         <p className="text-muted text-end">Published by: {blog?.authorname}</p>
