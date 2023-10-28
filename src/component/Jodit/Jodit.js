@@ -93,7 +93,7 @@ const JoditEditor = () => {
             },
         };
     };
-    const isMobile = window.innerWidth <= 768;
+   
     const imageUpload = (editor) => {
         const input = document.createElement('input');
         input.setAttribute('type', 'file');
