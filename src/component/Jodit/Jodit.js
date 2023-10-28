@@ -10,7 +10,7 @@ import Req from '../../Url';
 const JoditEditor = () => {
     const context = useContext(DataContext)
     const navigate = useNavigate()
-    let content;
+    let content = null;
     const title = context.data.blogtitle
     const subtitle = context.data.blogsubtitle
     const imgUrl = context.data.coverimg
@@ -141,9 +141,15 @@ const JoditEditor = () => {
     const Output = (e) => {
         content = e
     }
+    
     const handleSubmit = async () => {
+
+        console.log(content)
         if (!context.data.title &&  !context.data.authorname && !context.data.authoremail && !context.data.imgUrl) {
             navigate("/addblog")
+        }
+        else if(content!==null){
+            alert("Please Write Content in the Blog Section")
         }
         else{
             await Req.post("/blog/pendBlog", { title,subtitle, imgUrl, authorname, authoremail, content })
