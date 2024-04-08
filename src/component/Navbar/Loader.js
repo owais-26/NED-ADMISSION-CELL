@@ -32,7 +32,7 @@ const Loader = () => {
         />
         <div className="spanloader">
           <img className="loaderImg" src={img} alt="" />
-          <span className="loader "> </span>
+          <span className="loadder "> </span>
         </div>
       </>
     );

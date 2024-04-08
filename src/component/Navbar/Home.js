@@ -40,8 +40,8 @@ function Home() {
             <section className=" ">
               <div  className="container mx-auto  d-flex flex-wrap justify-items-center align-items-center">
                 <div data-aos='fade-right' className="col-lg-6 mt-sm-5 mt-5 mb-0 mb-sm-5 pt-5 pt-sm-5  col-md-6 ">
-                  <h3 className="display-5  text-color font-weight-medium mb-2 "> <q>Turning Dreams into Realities</q> </h3>
-                  <h3 className="display-6 mb-4">
+                  <h3 className="display-5  text-color font-weight-bolder mb-2 "> <q>Turning Dreams into Realities</q> </h3>
+                  <h3 className="display-7 mb-4 font-weight-bolder">
                   At the NED Admission Cell </h3>
                   <p className="hashim1  rounded text-white text-lg p-4">
                     <span className="display-6">We</span> 're dedicated to your academic journey. Our services include test preparations, expert guidance, quick responses, mock tests, field advice, and study materials. Let's partner for your NED University success!

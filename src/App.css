@@ -64,10 +64,10 @@ background: linear-gradient(298deg, rgba(11,24,83,1) 0%, rgba(30,12,96,1) 100%);
       
     }
   }
-@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Open+Sans&family=Secular+One&family=Varela&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Open+Sans&family=Secular+One&family=Varela&display=swap');
 .nav-item1 {
   color: white !important;
-  font-family: "Roboto", serif !important;
+  font-family: "Poppins", serif !important;
   /* font-size: 1rem; */
   /* font-weight: bold; */
   font-size: 16px;
@@ -246,7 +246,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Secular One", sans-serif !important;
+  font-family: "Poppins", sans-serif !important;
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 p {
